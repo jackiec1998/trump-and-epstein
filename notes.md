@@ -1,3 +1,110 @@
+# Statements
+
+## There are at least 10 documented instances where Donald Trump appeared in photos with Jeffrey Epstein or Ghislaine Maxwell.
+
+1. [1992, November --- Mar-a-Lago Event w/ Epstein, Mar-a-Lago](https://www.nbcnews.com/news/us-news/tape-shows-donald-trump-jeffrey-epstein-discussing-women-1992-party-n1030686)
+1. [1993, October 19 --- Harley Davidson Party w/ Epstein, New York City](https://www.dafjones.com/image?_bqG=8&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-)
+1. [1997, January 1 --- Mar-a-Lago Event w/ Epstein, Mar-a-Lago](https://www.gettyimages.com/detail/news-photo/portrait-of-american-financier-jeffrey-epstein-and-real-news-photo/681946574)
+1. [1997 , April 9 --- Victoria's Secret Angels Event w/ Epstein, New York City](www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943)
+1. [1997, April 28 --- Victoria's Secret Angels Party w/ Epstein, New York City](https://www.gettyimages.com/detail/news-photo/american-businessman-and-ex-president-donald-trump-belgian-news-photo/2078474569)
+1. [2000, February 12 --- Mar-a-Lago Event w/ Epstein & Maxwell, Mar-a-Lago](www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807)
+1. [2000, September 18 --- Anand Jon Fashion Show w/ Maxwell, New York City](https://www.gettyimages.com/detail/news-photo/portrait-of-from-left-future-married-couple-fashion-model-news-photo/1254069198)
+1. [2000, October 31 --- Heidi Klum's Halloween Party w/ Maxwell, New York City](https://www.dailymail.co.uk/news/article-7752543/Donald-Trump-poses-Ghislaine-Maxwell-Heidi-Klums-hookers-pimps-themed-party.html)
+1. [2002, November 11 --- Dolce & Gabbana Opening w/ Maxwell, New York City](https://www.gettyimages.com/detail/news-photo/ghislaine-maxwell-naomi-campbell-donald-trump-and-melania-news-photo/1169684622)
+
+## During the 2024 presidential election, several MAGA influencers and future members of the Trump administration suggested that Trump would release the Epstein files if he became president.
+
+Already checked: [Michael Knowles](https://x.com/michaeljknowles)
+
+https://kalshi.com/markets/kxepstein/epstein-documents
+
+### [Charlie Kirk](https://en.wikipedia.org/wiki/Charlie_Kirk)
+
+On October 7, 2024, Charlie Kirk made the following [X post](https://x.com/charliekirk11/status/1843421097628512758):
+
+> Just as Hollywood will be a safer place once all those who helped Diddy commit his crimes are exposed, one of the surest ways to rid our billionaire class of the corruption and cowardice that currently plagues it, is to release the Epstein list.
+>
+> Vote Trump to release the list!!
+
+### [Benny Johnson]()
+
+1. https://x.com/bennyjohnson/status/1896722273522130957
+1. https://x.com/bennyjohnson/status/1901350501842600093
+
+### [Ben Shapiro]()
+
+1. https://x.com/benshapiro/status/1098997810597310464
+1. https://x.com/benshapiro/status/1253699234517282821
+1. https://x.com/benshapiro/status/1163540296459665408
+
+### [Gunther Eagleman]()
+
+1. https://x.com/GuntherEagleman/status/1942574587406848360
+1. https://x.com/GuntherEagleman/status/1944010425651085513
+1. https://x.com/GuntherEagleman/status/1942772286127497401
+1. https://x.com/GuntherEagleman/status/1943855356288843913
+1. https://x.com/GuntherEagleman/status/1942949790813155360
+
+### [Tim Pool]()
+
+1. https://x.com/Timcast/status/1895196506497654913
+1. https://x.com/Timcast/status/1893018871201775712
+1. https://x.com/Timcast/status/1942210207049740668
+
+### [Riley Gaines](https://en.wikipedia.org/wiki/Riley_Gaines)
+
+1. https://x.com/Riley_Gaines_/status/1884808440188436899
+1. https://x.com/Riley_Gaines_/status/1882456778254037180
+1. https://x.com/Riley_Gaines_/status/1885043332138561705
+
+### [Libs of TikTok (Chaya Raichik)](https://en.wikipedia.org/wiki/Libs_of_TikTok)
+
+1. https://x.com/libsoftiktok/status/1893006103157334271
+1. https://x.com/libsoftiktok/status/1894921361916584164
+1. https://x.com/libsoftiktok/status/1896756958960796004
+1. https://x.com/libsoftiktok/status/1889377577166340322
+1. https://x.com/libsoftiktok/status/1889405201976537225
+1. https://x.com/libsoftiktok/status/1831032658069184971 (Lex Fridman clip)
+1. https://x.com/libsoftiktok/status/1854120892307279948
+1. https://x.com/libsoftiktok/status/1853885016507547665
+
+## Several MAGA influences have expressed their frustration with Trump's handling of the Epstein files.
+
+### Social Media Posts
+
+1. Tim Pool
+   1. July 7, 2025: https://x.com/Timcast/status/1942210207049740668
+
+### July 11, 2025 --- Turing Point USA Student Action Summit Boos
+
+> Fox News host Laura Ingraham polled the summit crowd: “How many of you are satisfied — you can clap — satisfied with the result of the Epstein investigation?”
+>
+> She received overwhelming boos. [CNN](https://www.cnn.com/2025/07/14/politics/epstein-fallout-trump-maga)
+
+Video footage hosted on [C-SPAN](https://www.c-span.org/program/public-affairs-event/laura-ingraham-speaks-at-turning-point-usa-summit/662447).
+
+## President Trump, U.S. Attorney General Bondi, FBI director Patel, FBI deputy director said they would release the Epstein files.
+
+## Most Americans believe Jeffrey Epstein was murdered rather than died by suicide, though many remain uncertain.
+
+### August 24-26, 2019 --- [Emerson Polling](https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades)
+
+> **Voters are split regarding the cause of death of Billionaire convicted sex offender Jeffrey Epstein: 34% believe he was murdered, 33% believe he committed suicide, and 32% are unsure.** Party affiliation has a strong impact on what voters believe on this issue, as 46% of Republicans say it was murder vs. 26% say it was suicide. Among Democrats, 38% say it was suicide as compared to 26%b who believe he was murdered. Of Independents, 31% believe he was murdered, 37% believe he committed suicide, and 33% are unsure.
+
+### November 25, 2019 --- [Business Insider](https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11)
+
+> **45% of Americans baselessly believe that Jeffrey Epstein was murdered according to a new poll by Insider conducted on Surveymonkey Audience.**
+>
+> ...
+>
+> According to a new poll conducted by Insider, 45% of Americans believe the disgraced financier and sex offender was murdered, 16% believe he died by suicide, and 39% are unsure.
+
+### July 9, 2025 --- [YouGov](https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1)
+
+A 7,237 participant survey shows that **39% of Americans believe that Epstein was murdered,** 20% believe he committed suicide. Only 1% believe he died accidentally and 40% where unsure.
+
+---
+
 # Timeline
 
 ## Legend
@@ -49,7 +156,7 @@
 
 ### February 12 --- Trump, Melania, Epstein & Ghislaine @ Mar-a-Lago 📸
 
-> From left, American real estate developer Donald Trump and his girlfriend (and future wife), former model Melania Knauss, financier (and future convicted sex offender) Jeffrey Epstein, and British socialite Ghislaine Maxwell pose together at the Mar-a-Lago club, Palm Beach, Florida, February 12, 2000. [Getty Images --- Davidoff Studio Photograph](www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807?adppopup=true)
+> From left, American real estate developer Donald Trump and his girlfriend (and future wife), former model Melania Knauss, financier (and future convicted sex offender) Jeffrey Epstein, and British socialite Ghislaine Maxwell pose together at the Mar-a-Lago club, Palm Beach, Florida, February 12, 2000. [Getty Images --- Davidoff Studio Photograph](www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807)
 
 ### September 18 --- Trump & Ghislaine @ Anand Jon Fashion Show 📸
 
@@ -191,6 +298,12 @@ Bondi's reponse was:
 
 On the same day, a photo was taken showing "[p]olitical commentator Rogan O'Handley, aka DC Draino, TikToker Chaya Raichik, commentator Liz Wheeler and US conservative activist Scott Presler carry[ing] binders bearing the seal of the US Justice Department reading 'The Epstein Files: Phase 1' as they walk out of the West Wing of the White House in Washington, DC." [Getty Images --- Jim Watson](www.gettyimages.com/detail/news-photo/political-commentator-rogan-ohandley-aka-dc-draino-tiktoker-news-photo/2201631069)
 
+### April 25 --- Virginia Giuffre, an accuser of Jeffrey Epstein, commits suicide.
+
+However, on March 31, 2025, she was badly injuried in a car accident and given four days to live---announced on [Instagram](https://www.instagram.com/p/DH0vvDKzDvu/), reported on by the [BBC](https://www.bbc.com/news/articles/c5yl5vle2nmo).
+
+On Piers Morgan's show, her dad claims she did not die by suicide, reported by the [Independent](https://www.independent.co.uk/news/world/americas/virginia-giuffre-father-death-cause-b2743303.html).
+
 ### May 7 --- AG Pam Bondi States There Are "Tens of Thousands of Videos of Epstein with Children" 💬
 
 > “There are tens of thousands of videos of Epstein with children or child porn and there are hundreds of victims,” Bondi told reporters at the White House on Wednesday. “And no one victim will ever get released. It’s just the volume and that’s what they’re going through right now. The FBI is diligently going through that.” [Miami Herald](https://www.miamiherald.com/news/politics-government/article305900636.html)
@@ -235,53 +348,18 @@ Trump posted his frustrated on Truth Social:
 
 Introduces theory that Democrats wrote the Epstein files.
 
----
+### July 14 --- Daily Mail reports that Ghislaine Maxwell is "willing to speak in front of Congress." 📰
 
-# Unique Times Together 📸
+Per [Daily Mail exclusive reporting](https://www.dailymail.co.uk/news/article-14901591/Jeffery-Epstein-Ghislaine-Maxwell-trump-congress.html), Ghislaine Maxwell "is willing to speak in front of Congres about The Epstein Files... [however] '[n]o-one from the government has asked her to share what she knows.'"
 
-Pictures and videos showing Donald Trump with either Jeffrey Epstein or Ghislaine Maxwell.
+### July 14 --- Charlie Kirk says he's "done talking about Epstein for the time being" after Trump calls him Saturday (July 12).
 
-1. 1992, November --- (Epstein) NBC Archive Tape @ Mar-a-Lago
-1. 1993, October 19 --- (Epstein) Harley Davidson Party @ New York City
-1. 1998, January 1 --- (Epstein) @ Mar-a-Lago
-1. 1997, April 9 --- (Epstein) Victoria's Secret Angels Event @ New York City
-1. 1997, April 28 --- (Epstein) Victoria's Secret Angels Party @ New York City
-1. 1997, October 30 --- (Ghislaine) Ford Modeling Agency & Pantene Hair Care Products 50th Anniversary @ New York City
-1. 2000, February 12 --- (Epstein & Maxwell) @ Mar-a-Lago
-1. 2000, September 18 --- (Ghislaine) Anand Jon Fashion Show @ New York City
-1. 2000, October --- (Ghislaine) Heidi Klum's Halloween Party @ New York City
-1. 2002, November 11 -- (Maxwell) Dolce & Gabbana Opening @ New York City
+Reported by [Media Matters](https://www.mediamatters.org/charlie-kirk/charlie-kirk-im-done-talking-about-epstein-time-being-im-gonna-trust-my-friends)---and [CNN](https://www.cnn.com/2025/07/12/politics/bondi-epstein-investigation-trump) who reported the call:
 
----
-
-# Conservatives Campaigned on Trump Releasing Epstein Files
-
-## Charlie Kirk
-
-### October 7, 2024
-
-> Just as Hollywood will be a safer place once all those who helped Diddy commit his crimes are exposed, one of the surest ways to rid our billionaire class of the corruption and cowardice that currently plagues it, is to release the Epstein list.
+> Privately, Trump has also doubled down on his support for Bondi. The president called some of the attorney general’s most vocal critics over the weekend in an effort to stem the bleeding over the Epstein files, three sources familiar with the matter told CNN.
 >
-> Vote Trump to release the list!! [X](https://x.com/charliekirk11/status/1843421097628512758)
+> **Trump’s calls included one with conservative activist Charlie Kirk on Saturday to express his support for Bondi.** The call came as prominent MAGA supporters repeatedly criticized the attorney general at Kirk’s Turning Point USA Student Action Summit, a Florida event aimed at mobilizing young conservatives.
 
----
+And then on July 14, Kirk says:
 
-# Polling 📊
-
-## August 24-26, 2019 --- [Emerson Polling](https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades)
-
-> **Voters are split regarding the cause of death of Billionaire convicted sex offender Jeffrey Epstein: 34% believe he was murdered, 33% believe he committed suicide, and 32% are unsure.** Party affiliation has a strong impact on what voters believe on this issue, as 46% of Republicans say it was murder vs. 26% say it was suicide. Among Democrats, 38% say it was suicide as compared to 26%b who believe he was murdered. Of Independents, 31% believe he was murdered, 37% believe he committed suicide, and 33% are unsure.
-
-## November 25, 2019 --- [Business Insider](https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11)
-
-> **45% of Americans baselessly believe that Jeffrey Epstein was murdered according to a new poll by Insider conducted on Surveymonkey Audience.**
->
-> ...
->
-> According to a new poll conducted by Insider, 45% of Americans believe the disgraced financier and sex offender was murdered, 16% believe he died by suicide, and 39% are unsure.
-
-## July 9, 2025 --- [YouGov](https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1)
-
-A 7,237 participant survey shows that **39% of Americans believe that Epstein was murdered,** 20% believe he committed suicide. Only 1% believe he died accidentally and 40% where unsure.
-
-# Social Media 💻
+> Plenty was said this last weekend at our event about Epstein. **Honestly, I'm done talking about Epstein for the time being. I'm gonna trust my friends in the administration,** I'm gonna trust my friends in the government to do what needs to be done, solve it, ball's in their hands.
