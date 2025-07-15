@@ -1,3 +1,9 @@
+# Haven't Read
+
+- [Vox --- The lawsuit accusing Trump of raping a 13-year-old girl, explained](https://www.vox.com/policy-and-politics/2016/11/3/13501364/trump-rape-13-year-old-lawsuit-katie-johnson-allegation), [Archive](https://archive.ph/A6Laq)
+
+---
+
 # Statements
 
 ## There are at least 10 documented instances where Donald Trump appeared in photos with Jeffrey Epstein or Ghislaine Maxwell.
@@ -50,6 +56,9 @@ On October 7, 2024, Charlie Kirk made the following [X post](https://x.com/charl
 1. https://x.com/Timcast/status/1895196506497654913
 1. https://x.com/Timcast/status/1893018871201775712
 1. https://x.com/Timcast/status/1942210207049740668
+1. https://x.com/Timcast/status/1945088501508194752
+1. https://x.com/Timcast/status/1945094370681623010
+1. https://x.com/Timcast/status/1945107733167866359
 
 ### [Riley Gaines](https://en.wikipedia.org/wiki/Riley_Gaines)
 
@@ -67,6 +76,10 @@ On October 7, 2024, Charlie Kirk made the following [X post](https://x.com/charl
 1. https://x.com/libsoftiktok/status/1831032658069184971 (Lex Fridman clip)
 1. https://x.com/libsoftiktok/status/1854120892307279948
 1. https://x.com/libsoftiktok/status/1853885016507547665
+
+### [Dinesh D'Souza](https://en.wikipedia.org/wiki/Dinesh_D%27Souza)
+
+1. https://x.com/DineshDSouza/status/1887164256623194400
 
 ## Several MAGA influences have expressed their frustration with Trump's handling of the Epstein files.
 
