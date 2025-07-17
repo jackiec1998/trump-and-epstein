@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Body = ({
 	children,
 	className,
@@ -10,7 +12,7 @@ const Body = ({
 	</p>
 );
 
-const Divider = () => <hr className="my-6 border-t border-gray-200" />;
+const Divider = () => <hr className="my-4 border-t border-gray-200" />;
 
 const SourceButton = ({
 	children,
@@ -32,18 +34,85 @@ const SourceButton = ({
 	</a>
 );
 
-const InlineCitation = ({ label, link }: { label: string; link: string }) => (
-	<a
-		href={link}
-		target="_blank"
-		rel="noopener noreferrer"
-		className="inline-flex items-center gap-1  hover:text-blue-600 hover:underline transition-colors duration-200"
-		aria-label={`View ${label}`}
-	>
-		{label} <span className="text-sm">🔗</span>
-	</a>
+const Link = ({
+	href,
+	label,
+	withParentheses = true,
+}: {
+	href: string;
+	label: string;
+	withParentheses?: boolean;
+}) => (
+	<span>
+		{withParentheses && "("}
+		<a
+			href={href}
+			className={`underline transition-colors hover:text-blue-600 italic ${
+				withParentheses ? "mx-[2px]" : ""
+			}`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			{label}
+		</a>
+		{withParentheses && ")"}
+	</span>
 );
 
+export const IsotypeChart = ({
+	data,
+}: {
+	data: { label: string; value: number; color: string }[];
+}) => {
+	const total = 100;
+	const squares: { color: string; label: string }[] = [];
+
+	data.forEach(({ value, color, label }) => {
+		for (let i = 0; i < value; i++) {
+			squares.push({ color, label });
+		}
+	});
+
+	// Fill to 100 if not already
+	while (squares.length < total) {
+		squares.push({ color: "bg-gray-200", label: "Unused" });
+	}
+
+	return (
+		<div className="flex justify-center my-4">
+			<div className="space-y-4">
+				{/* Grid */}
+				<div className="grid grid-cols-10 gap-1.5 w-fit mx-auto">
+					{squares.map((square, idx) => (
+						<div
+							key={idx}
+							className={`w-3 h-3 sm:w-4 sm:h-4 rounded-sm ${square.color}`}
+							title={square.label}
+						/>
+					))}
+				</div>
+
+				{/* Legend */}
+				<div className="flex flex-row justify-between text-gray-500 text-[10pt] w-[400px]">
+					{data.map(({ label, value, color }, idx) => (
+						<div key={idx} className="flex items-center gap-2 ">
+							<div className={`w-3 h-3 rounded-sm ${color}`} />
+							<span>
+								{label} ({value}%)
+							</span>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	);
+};
+
+const BlockQuote = ({ children }: { children: React.ReactNode }) => (
+	<blockquote className="text-xs text-gray-500 border-s-3 border-gray-200 mt-2 py-1 pl-3 leading-relaxed">
+		{children}
+	</blockquote>
+);
 const Timeline = () => {
 	const appearances: {
 		location: string;
@@ -191,10 +260,116 @@ const Timeline = () => {
 	);
 };
 
+const EmersonPoll = () => {
+	const [filter, setFilter] = useState<
+		"all" | "democrats" | "republicans" | "independents"
+	>("all");
+
+	const data = {
+		all: [
+			{ label: "Murder", value: 34, color: "bg-red-500" },
+			{ label: "Suicide", value: 33, color: "bg-blue-500" },
+			{ label: "Unsure", value: 33, color: "bg-gray-200" },
+		],
+		democrats: [
+			{ label: "Murder", value: 26, color: "bg-red-500" },
+			{ label: "Suicide", value: 38, color: "bg-blue-500" },
+			{ label: "Unsure", value: 100 - (26 + 38), color: "bg-gray-200" },
+		],
+		republicans: [
+			{ label: "Murder", value: 46, color: "bg-red-500" },
+			{ label: "Suicide", value: 26, color: "bg-blue-500" },
+			{ label: "Unsure", value: 100 - (46 + 26), color: "bg-gray-200" },
+		],
+		independents: [
+			{ label: "Murder", value: 31, color: "bg-red-500" },
+			{ label: "Suicide", value: 37, color: "bg-blue-500" },
+			{ label: "Unsure", value: 100 - (31 + 37), color: "bg-gray-200" },
+		],
+	};
+
+	return (
+		<div className="my-4">
+			<div className="flex flex-row items-center space-x-2">
+				<label className="block text-xs text-gray-600 mb-1">
+					Filter by party affiliation:
+				</label>
+				<select
+					value={filter}
+					onChange={(e) => setFilter(e.target.value as any)}
+					className="border border-gray-200 rounded-md px-2 py-1 text-xs text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-200 transition"
+				>
+					<option value="all">All</option>
+					<option value="democrats">Democrats</option>
+					<option value="republicans">Republicans</option>
+					<option value="independents">Independents</option>
+				</select>
+			</div>
+
+			<IsotypeChart data={data[filter]} />
+		</div>
+	);
+};
+
+const YouGovPoll = () => {
+	const [filter, setFilter] = useState<
+		"all" | "democrats" | "republicans" | "independents"
+	>("all");
+
+	const data = {
+		all: [
+			{ label: "Murder", value: 39, color: "bg-red-500" },
+			{ label: "Suicide", value: 20, color: "bg-blue-500" },
+			{ label: "Accident", value: 1, color: "bg-green-500" },
+			{ label: "Unsure", value: 40, color: "bg-gray-200" },
+		],
+		democrats: [
+			{ label: "Murder", value: 38, color: "bg-red-500" },
+			{ label: "Suicide", value: 23, color: "bg-blue-500" },
+			{ label: "Accident", value: 1, color: "bg-green-500" },
+			{ label: "Unsure", value: 38, color: "bg-gray-200" },
+		],
+		republicans: [
+			{ label: "Murder", value: 43, color: "bg-red-500" },
+			{ label: "Suicide", value: 21, color: "bg-blue-500" },
+			{ label: "Accident", value: 1, color: "bg-green-500" },
+			{ label: "Unsure", value: 35, color: "bg-gray-200" },
+		],
+		independents: [
+			{ label: "Murder", value: 37, color: "bg-red-500" },
+			{ label: "Suicide", value: 17, color: "bg-blue-500" },
+			{ label: "Accident", value: 1, color: "bg-green-500" },
+			{ label: "Unsure", value: 45, color: "bg-gray-200" },
+		],
+	};
+
+	return (
+		<div className="my-4">
+			<div className="flex flex-row items-center space-x-2">
+				<label className="block text-xs text-gray-600 mb-1">
+					Filter by party affiliation:
+				</label>
+				<select
+					value={filter}
+					onChange={(e) => setFilter(e.target.value as any)}
+					className="border border-gray-200 rounded-md px-2 py-1 text-xs text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-200 transition"
+				>
+					<option value="all">All</option>
+					<option value="democrats">Democrats</option>
+					<option value="republicans">Republicans</option>
+					<option value="independents">Independents</option>
+				</select>
+			</div>
+
+			<IsotypeChart data={data[filter]} />
+		</div>
+	);
+};
+
 function App() {
 	return (
 		<div className="flex justify-center">
-			<div className="w-[450px] my-8 px-4">
+			<div className="w-[430px] my-8">
 				<h1 className="font-bold text-gray-800 mb-2">
 					What you need to know about Trump & Epstein.
 				</h1>
@@ -243,21 +418,54 @@ function App() {
 					<Body>
 						On August 10, 2019, Epstein was found unresponsive in his
 						Metropolitan Correctional Center jail cell where he was awaiting
-						trial. This was about a month after he was arrested on July 6, 2019
-						at Teterboro Airport in New Jersey. On July 8, the Department of
-						Justice published a
-						<InlineCitation
+						trial.{" "}
+						<Link
+							href="https://www.npr.org/2019/08/10/750113214/jeffrey-epstein-found-dead-early-saturday-morning"
+							label="NPR"
+						/>
+					</Body>
+					<Body>
+						{" "}
+						This was about a month after he was arrested on July 6 at Teterboro
+						Airport in New Jersey.{" "}
+						<Link
+							label="NBC New York"
+							href="https://www.nbcnewyork.com/news/local/jeffrey-epstein-arrest-sources-upper-east-side-mansion/1632882/"
+						/>{" "}
+						Two days after his arrest, the Department of Justice published a{" "}
+						<Link
 							label="press release"
-							link="https://www.justice.gov/usao-sdny/pr/jeffrey-epstein-charged-manhattan-federal-court-sex-trafficking-minors"
+							href="https://www.justice.gov/usao-sdny/pr/jeffrey-epstein-charged-manhattan-federal-court-sex-trafficking-minors"
+							withParentheses={false}
 						/>{" "}
 						charging Epstein with sex trafficking of minors and conspiracy to
 						commit sex trafficking of minors.
 					</Body>
-					<div>
-						<time>August 24-26 2019</time>
-						<h3>Emerson College Polling</h3>
-						<blockquote className="text-xs text-gray-500">
-							<span className="text-gray-800 font-semibold">
+					<Body>
+						To illustrate the public's adoption of the Epstein conspiracy, I
+						report polling results from Emerson College Polling, Business
+						Insider, and YouGov which asked Americans on the circumstances
+						around Epstein's death.
+					</Body>
+					<article className="mt-3">
+						<div className="flex items-center justify-between mt-1">
+							<div>
+								<time className="text-[8pt] text-gray-400">
+									August 24 - 26, 2019
+								</time>
+								<h3 className="font-semibold">Emerson College Polling</h3>
+							</div>
+							<SourceButton href="https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades">
+								View on Emerson Polling
+							</SourceButton>
+						</div>
+						<Body>
+							Emerson College included a question about Epstein's death in a
+							poll conducted between August 24 and 26, 2019, alongside items on
+							the 2020 Democratic primary and Trump's approval rating.
+						</Body>
+						<BlockQuote>
+							<span className="font-semibold text-gray-600">
 								Voters are split regarding the cause of death of Billionaire
 								convicted sex offender Jeffrey Epstein: 34% believe he was
 								murdered, 33% believe he committed suicide, and 32% are unsure.
@@ -268,8 +476,76 @@ function App() {
 							to 26% who believe he was murdered. Of Independents, 31% believe
 							he was murdered, 37% believe he committed suicide, and 33% are
 							unsure.
-						</blockquote>
-					</div>
+						</BlockQuote>
+						<EmersonPoll />
+					</article>
+					<article>
+						<div className="flex items-center justify-between mt-1">
+							<div>
+								<time className="text-[8pt] text-gray-400">
+									November 22 - 23, 2019
+								</time>
+								<h3 className="font-semibold">Business Insider</h3>
+							</div>
+							<SourceButton href="https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11">
+								View on Business Insider
+							</SourceButton>
+						</div>
+						<Body>
+							Business Insider repeated the same survey using the original
+							wording from the earlier Emerson poll. They conducted it through
+							SurveyMonkey Audience, which is representative of the U.S.
+							population by age and gender, though not by race. Political
+							affiliation was also collected, though results for independents
+							were not reported. They found:
+						</Body>
+						<BlockQuote>
+							<span className="font-semibold text-gray-600">
+								45% of Americans believe [Jeffrey Epstein] was murdered, 16%
+								believe he died by suicide, and 39% are unsure.
+							</span>{" "}
+							[...] 56% of Republicans and 44% of Democrats [now believe in] the
+							conspiracy theory. [Thus,] people on{" "}
+							<span className="font-semibold text-gray-600">
+								both sides of the aisle appear almost equally prone to
+								conspiracies.
+							</span>
+						</BlockQuote>
+						<IsotypeChart
+							data={[
+								{ label: "Murder", value: 45, color: "bg-red-500" },
+								{ label: "Suicide", value: 16, color: "bg-blue-500" },
+								{ label: "Unsure", value: 39, color: "bg-gray-200" },
+							]}
+						/>
+					</article>
+					<article>
+						<div className="flex items-center justify-between mt-1">
+							<div>
+								<time className="text-[8pt] text-gray-400">
+									November 9, 2025
+								</time>
+								<h3 className="font-semibold">YouGov</h3>
+							</div>
+							<SourceButton href="https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1">
+								View on YouGov
+							</SourceButton>
+						</div>
+						<Body>
+							Almost six years later, YouGov conducted another poll on the
+							Epstein conspiracy and found similar results to Business Insider's
+							poll. Specifically, YouGov found that{" "}
+							<span className="font-semibold text-gray-600">
+								20% of Americans believed he committed suicide, 39% that he was
+								murdered, 1% that he died accidentally, and 40% were unsure.
+							</span>{" "}
+							In addition to collecting political affiliation—which showed
+							similar agreement across party lines—YouGov also reports splits
+							for region, gender, age, and race which you can see on their
+							website.
+						</Body>
+						<YouGovPoll />
+					</article>
 				</article>
 			</div>
 		</div>
