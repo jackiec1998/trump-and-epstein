@@ -2,8 +2,6 @@
 
 - [Vox --- The lawsuit accusing Trump of raping a 13-year-old girl, explained](https://www.vox.com/policy-and-politics/2016/11/3/13501364/trump-rape-13-year-old-lawsuit-katie-johnson-allegation), [Archive](https://archive.ph/A6Laq)
 
----
-
 # Statements
 
 ## There are at least 10 documented instances where Donald Trump appeared in photos with Jeffrey Epstein or Ghislaine Maxwell.
@@ -11,10 +9,10 @@
 1. 1992, November --- Trump and Epstein partying together at Mar-a-Lago. [NBC News](https://www.nbcnews.com/news/us-news/tape-shows-donald-trump-jeffrey-epstein-discussing-women-1992-party-n1030686)
 1. 1993, October 19 --- Trump, with Ivanka and Eric, photographed next to Epstein at Harley Davidson Cafe opening in New York City. [Dafydd Jones](https://www.dafjones.com/image?_bqG=8&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-)
 1. 1997, January 1 --- Trump with his arm over the shoulder of Epstein at a Mar-a-Lago party. [Davidoff Studios Photography, Getty Images](https://www.gettyimages.com/detail/news-photo/portrait-of-american-financier-jeffrey-epstein-and-real-news-photo/681946574)
-1. 1997, April 9 --- Trump and Epstein attending a Victoria's Secret Angels event in New York City. [Thomas Concordia, Getty Images](www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943)
+1. 1997, April 9 --- Trump and Epstein attending a Victoria's Secret Angels event in New York City. [Thomas Concordia, Getty Images](https://www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943)
 1. 1997, April 28 --- Trump pictured with model and Epstein is behind him attending a Victoria's Secret Angels party. [Sonia Moskowitz, Getty Images](https://www.gettyimages.com/detail/news-photo/american-businessman-and-ex-president-donald-trump-belgian-news-photo/2078474569)
 1. 1997, October 30 --- Trump and Maxwell photographed together attending the 50th anniversary for both Ford Modeling Agency and Pantene hair care products in New York City. [NY Daily News Archive, Getty Images](https://www.gettyimages.com/detail/news-photo/the-50th-anniversary-for-both-the-ford-modeling-agency-and-news-photo/1233893134)
-1. 2000, February 12 --- Trump, Melania, Epstein, and Maxwell photographed together at Mar-a-Lago. [Davidoff Studios Photography](www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807)
+1. 2000, February 12 --- Trump, Melania, Epstein, and Maxwell photographed together at Mar-a-Lago. [Davidoff Studios Photography](https://www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807)
 1. 2000, September 18 --- Trump, Melania, and Maxwell photographed together at Anand Jon Fashion Show in New York City. [Patrick McMullan, Getty Images](https://www.gettyimages.com/detail/news-photo/portrait-of-from-left-future-married-couple-fashion-model-news-photo/1254069198)
 1. 2000, October --- Trump, Melania, and Maxwell photographed together at Heidi Klum's "hookers and pimps-themed" Halloween party. [Daily Mail](https://www.dailymail.co.uk/news/article-7752543/Donald-Trump-poses-Ghislaine-Maxwell-Heidi-Klums-hookers-pimps-themed-party.html)
 1. 2002, November 11 --- Trump, Melania, and Maxwell photographed together at Dolce & Gabbana Opening in New York City. [Patrick McMullan, Getty Images](https://www.gettyimages.com/detail/news-photo/ghislaine-maxwell-naomi-campbell-donald-trump-and-melania-news-photo/1169684622)
@@ -133,7 +131,7 @@ A 7,237 participant survey shows that **39% of Americans believe that Epstein wa
 
 ## 2017
 
-- 2017, August --- Michael Wolff interviews Epstein: "I was Donald's closest friend for 10 years." [The Daily Beast](https://www.thedailybeast.com/listen-to-the-jeffrey-epstein-tapes-i-was-donald-trumps-closest-friend/) / [Archive](https://archive.ph/TLkc1)
+- 2017, August --- Michael Wolff interviews Epstein: _"I was Donald's closest friend for 10 years."_ [The Daily Beast](https://www.thedailybeast.com/listen-to-the-jeffrey-epstein-tapes-i-was-donald-trumps-closest-friend/) / [Archive](https://archive.ph/TLkc1)
 
 ## 2019
 

@@ -1,16 +1,275 @@
+const Body = ({
+	children,
+	className,
+}: {
+	children: React.ReactNode;
+	className?: string;
+}) => (
+	<p className={`text-xs leading-relaxed text-gray-500 my-2 ${className}`}>
+		{children}
+	</p>
+);
+
+const Divider = () => <hr className="my-6 border-t border-gray-200" />;
+
+const SourceButton = ({
+	children,
+	href,
+	className = "",
+}: {
+	children: React.ReactNode;
+	href: string;
+	className?: string;
+}) => (
+	<a
+		href={href}
+		target="_blank"
+		rel="noopener noreferrer"
+		className={`inline-flex items-center border border-gray-200 text-xs px-2 py-1 rounded-md text-gray-500  w-auto hover:bg-gray-50 hover:border-gray-300 hover:text-gray-600 transition ${className}`}
+	>
+		{children}
+		<span className="ml-1.5">→</span>
+	</a>
+);
+
+const InlineCitation = ({ label, link }: { label: string; link: string }) => (
+	<a
+		href={link}
+		target="_blank"
+		rel="noopener noreferrer"
+		className="inline-flex items-center gap-1  hover:text-blue-600 hover:underline transition-colors duration-200"
+		aria-label={`View ${label}`}
+	>
+		{label} <span className="text-sm">🔗</span>
+	</a>
+);
+
+const Timeline = () => {
+	const appearances: {
+		location: string;
+		year: number;
+		month: string;
+		day?: number;
+		description: string;
+		source: string;
+		buttonText: string;
+	}[] = [
+		{
+			location: "Palm Beach, FL",
+			year: 1992,
+			month: "November",
+			description: "Trump and Epstein partying together at Mar-a-Lago.",
+			source:
+				"https://www.nbcnews.com/news/us-news/tape-shows-donald-trump-jeffrey-epstein-discussing-women-1992-party-n1030686",
+			buttonText: "View on NBC News",
+		},
+		{
+			location: "New York, NY",
+			year: 1993,
+			month: "October",
+			day: 19,
+			description:
+				"Trump and Epstein together at the Harley Davidson Cafe opening in Manhattan. Ivanka and Eric Trump are also present.",
+			source:
+				"https://www.dafjones.com/image?_bqG=4&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-",
+			buttonText: "View on Dafydd Jones",
+		},
+		{
+			location: "Palm Beach, FL",
+			year: 1997,
+			month: "January",
+			day: 1,
+			description: "Trump with his arm over Epstein's shoulder at Mar-a-Lago.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/portrait-of-american-financier-jeffrey-epstein-and-real-news-photo/681946574",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "New York, NY",
+			year: 1997,
+			month: "April",
+			day: 7,
+			description: "Trump and Epstein at a Victoria's Secret Angels event.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "New York, NY",
+			year: 1997,
+			month: "April",
+			day: 28,
+			description:
+				"Trump and a model at a Victoria's Secret Angels event with Epstein behind him.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "New York, NY",
+			year: 1997,
+			month: "October",
+			day: 30,
+			description:
+				"Trump and Maxwell together at the 50th anniversary for the Ford Modeling Agency and Pantene hair care products.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/the-50th-anniversary-for-both-the-ford-modeling-agency-and-news-photo/1233893134",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "Palm Beach, FL",
+			year: 2000,
+			month: "February",
+			day: 12,
+			description:
+				"Trump, Melania, Epstein, and Maxwell together at Mar-a-Lago.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "New York, NY",
+			year: 2000,
+			month: "September",
+			day: 18,
+			description:
+				"Trump, Melania, and Maxwell attending Anand Jon Fashion Show.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/portrait-of-from-left-future-married-couple-fashion-model-news-photo/1254069198",
+			buttonText: "View on Getty Images",
+		},
+		{
+			location: "New York, NY",
+			year: 2000,
+			month: "October",
+			description:
+				'Trump, Melania, and Maxwell at Heidi Klum\'s "hookers and pimps"-themed Halloween party.',
+			source:
+				"https://www.dailymail.co.uk/news/article-7752543/Donald-Trump-poses-Ghislaine-Maxwell-Heidi-Klums-hookers-pimps-themed-party.html",
+			buttonText: "View on Daily Mail",
+		},
+		{
+			location: "New York, NY",
+			year: 2002,
+			month: "November",
+			day: 11,
+			description:
+				"Trump, Melania, Naomi Campbell, and Maxwell attending Dolce & Gabbana Opening.",
+			source:
+				"https://www.gettyimages.com/detail/news-photo/ghislaine-maxwell-naomi-campbell-donald-trump-and-melania-news-photo/1169684622",
+			buttonText: "View on Getty Images",
+		},
+	];
+
+	const formatDate = (year: number, month: string, day?: number) =>
+		`${month}${day ? ` ${day},` : ""} ${year}`;
+
+	const Bullet = () => (
+		<div className="absolute w-3 h-3 bg-gray-200 rounded-full -start-[6.5px] mt-[8.5px] border-2 border-white"></div>
+	);
+
+	return (
+		<ol className="relative ml-2 border-s border-gray-200 space-y-4 mt-4 pb-2">
+			{appearances.map((appearance, index) => (
+				<li key={index} className="ml-4 w-[320px] space-y-1">
+					<Bullet />
+					<time className="text-[7pt] text-gray-400">
+						{formatDate(appearance.year, appearance.month, appearance.day)}
+					</time>
+					<p className="text-[10pt] font-semibold text-gray-800">
+						{appearance.location}
+					</p>
+					<p className="text-xs leading-relaxed text-gray-500 text-pretty">
+						{appearance.description}
+					</p>
+					<SourceButton href={appearance.source} className="mt-1">
+						{appearance.buttonText}
+					</SourceButton>
+				</li>
+			))}
+		</ol>
+	);
+};
+
 function App() {
 	return (
 		<div className="flex justify-center">
-			<div className="w-[500px] mt-4">
-				<h1 className="text-2xl font-bold">
-					Trump's Ties to Epstein & Maxwell
+			<div className="w-[450px] my-8 px-4">
+				<h1 className="font-bold text-gray-800 mb-2">
+					What you need to know about Trump & Epstein.
 				</h1>
 
-				<article className="my-4">
-					<h2>
+				<Body>Some facts about Trump and his relationship with Epstein:</Body>
+				<ul className="list-disc ml-6 text-xs text-gray-500 leading-relaxed">
+					<li className="">
+						There are at least 10 documented instances where Trump appeared in
+						photos with Epstein or Maxwell.
+					</li>
+					<li>
+						Most Americans believe Epstein was murdered, though many remain
+						unsure.
+					</li>
+				</ul>
+
+				<Divider />
+
+				<article className="space-y-2">
+					<h2 className="font-semibold text-gray-800">
 						There are at least 10 documented instances where Trump appeared in
 						photos with Epstein or Maxwell.
 					</h2>
+					<Body>
+						These photos were taken at various events in New York City and
+						Mar-a-Lago. The earliest was in November 1992 and the latest was in
+						2002.
+					</Body>
+					<Timeline />
+					<Body className="mt-3">
+						Although not pictured together, Epstein was also photographed
+						attending Trump's wedding to Marla Maples in December 1993.
+					</Body>
+					<SourceButton href="https://www.dafjones.com/image?_bqG=9&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-">
+						View on Dafydd Jones
+					</SourceButton>
+				</article>
+
+				<Divider />
+
+				<article className="space-y-2">
+					<h2 className="font-semibold text-gray-800">
+						Most Americans believe Epstein was murdered, though many remain
+						unsure.
+					</h2>
+					<Body>
+						On August 10, 2019, Epstein was found unresponsive in his
+						Metropolitan Correctional Center jail cell where he was awaiting
+						trial. This was about a month after he was arrested on July 6, 2019
+						at Teterboro Airport in New Jersey. On July 8, the Department of
+						Justice published a
+						<InlineCitation
+							label="press release"
+							link="https://www.justice.gov/usao-sdny/pr/jeffrey-epstein-charged-manhattan-federal-court-sex-trafficking-minors"
+						/>{" "}
+						charging Epstein with sex trafficking of minors and conspiracy to
+						commit sex trafficking of minors.
+					</Body>
+					<div>
+						<time>August 24-26 2019</time>
+						<h3>Emerson College Polling</h3>
+						<blockquote className="text-xs text-gray-500">
+							<span className="text-gray-800 font-semibold">
+								Voters are split regarding the cause of death of Billionaire
+								convicted sex offender Jeffrey Epstein: 34% believe he was
+								murdered, 33% believe he committed suicide, and 32% are unsure.
+							</span>{" "}
+							Party affiliation has a strong impact on what voters believe on
+							this issue, as 46% of Republicans say it was murder vs. 26% say it
+							was suicide. Among Democrats, 38% say it was suicide as compared
+							to 26% who believe he was murdered. Of Independents, 31% believe
+							he was murdered, 37% believe he committed suicide, and 33% are
+							unsure.
+						</blockquote>
+					</div>
 				</article>
 			</div>
 		</div>
