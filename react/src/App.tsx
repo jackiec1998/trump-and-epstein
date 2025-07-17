@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { appearances } from "./data";
 
 const Body = ({
 	children,
@@ -62,7 +63,12 @@ const Link = ({
 export const IsotypeChart = ({
 	data,
 }: {
-	data: { label: string; value: number; color: string }[];
+	data: {
+		label: string;
+		value: number;
+		color: string;
+		difference?: number;
+	}[];
 }) => {
 	const total = 100;
 	const squares: { color: string; label: string }[] = [];
@@ -80,7 +86,7 @@ export const IsotypeChart = ({
 
 	return (
 		<div className="flex justify-center my-4">
-			<div className="space-y-4">
+			<div className="flex flex-row gap-6">
 				{/* Grid */}
 				<div className="grid grid-cols-10 gap-1.5 w-fit mx-auto">
 					{squares.map((square, idx) => (
@@ -93,13 +99,25 @@ export const IsotypeChart = ({
 				</div>
 
 				{/* Legend */}
-				<div className="flex flex-row justify-between text-gray-500 text-[10pt] w-[400px]">
-					{data.map(({ label, value, color }, idx) => (
+				<div className="flex flex-col space-y-2 text-gray-500 text-[8pt]">
+					{data.map(({ label, value, color, difference }, idx) => (
 						<div key={idx} className="flex items-center gap-2 ">
 							<div className={`w-3 h-3 rounded-sm ${color}`} />
-							<span>
-								{label} ({value}%)
-							</span>
+							<div className="relative flex justify-between w-[80px]">
+								<span>{label}</span> <span>{value}%</span>
+								<div className="absolute left-[90px] w-[30px] text-right">
+									{difference !== undefined && difference !== 0 && (
+										<span
+											className={`text-xs ${
+												difference > 0 ? "text-green-500" : "text-red-500"
+											}`}
+										>
+											({difference > 0 ? "+" : ""}
+											{difference})
+										</span>
+									)}
+								</div>
+							</div>
 						</div>
 					))}
 				</div>
@@ -114,122 +132,6 @@ const BlockQuote = ({ children }: { children: React.ReactNode }) => (
 	</blockquote>
 );
 const Timeline = () => {
-	const appearances: {
-		location: string;
-		year: number;
-		month: string;
-		day?: number;
-		description: string;
-		source: string;
-		buttonText: string;
-	}[] = [
-		{
-			location: "Palm Beach, FL",
-			year: 1992,
-			month: "November",
-			description: "Trump and Epstein partying together at Mar-a-Lago.",
-			source:
-				"https://www.nbcnews.com/news/us-news/tape-shows-donald-trump-jeffrey-epstein-discussing-women-1992-party-n1030686",
-			buttonText: "View on NBC News",
-		},
-		{
-			location: "New York, NY",
-			year: 1993,
-			month: "October",
-			day: 19,
-			description:
-				"Trump and Epstein together at the Harley Davidson Cafe opening in Manhattan. Ivanka and Eric Trump are also present.",
-			source:
-				"https://www.dafjones.com/image?_bqG=4&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-",
-			buttonText: "View on Dafydd Jones",
-		},
-		{
-			location: "Palm Beach, FL",
-			year: 1997,
-			month: "January",
-			day: 1,
-			description: "Trump with his arm over Epstein's shoulder at Mar-a-Lago.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/portrait-of-american-financier-jeffrey-epstein-and-real-news-photo/681946574",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "New York, NY",
-			year: 1997,
-			month: "April",
-			day: 7,
-			description: "Trump and Epstein at a Victoria's Secret Angels event.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "New York, NY",
-			year: 1997,
-			month: "April",
-			day: 28,
-			description:
-				"Trump and a model at a Victoria's Secret Angels event with Epstein behind him.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/businessman-donald-trump-and-financier-jeffrey-epstein-news-photo/2148187943",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "New York, NY",
-			year: 1997,
-			month: "October",
-			day: 30,
-			description:
-				"Trump and Maxwell together at the 50th anniversary for the Ford Modeling Agency and Pantene hair care products.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/the-50th-anniversary-for-both-the-ford-modeling-agency-and-news-photo/1233893134",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "Palm Beach, FL",
-			year: 2000,
-			month: "February",
-			day: 12,
-			description:
-				"Trump, Melania, Epstein, and Maxwell together at Mar-a-Lago.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/from-left-american-real-estate-developer-donald-trump-and-news-photo/1192977807",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "New York, NY",
-			year: 2000,
-			month: "September",
-			day: 18,
-			description:
-				"Trump, Melania, and Maxwell attending Anand Jon Fashion Show.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/portrait-of-from-left-future-married-couple-fashion-model-news-photo/1254069198",
-			buttonText: "View on Getty Images",
-		},
-		{
-			location: "New York, NY",
-			year: 2000,
-			month: "October",
-			description:
-				'Trump, Melania, and Maxwell at Heidi Klum\'s "hookers and pimps"-themed Halloween party.',
-			source:
-				"https://www.dailymail.co.uk/news/article-7752543/Donald-Trump-poses-Ghislaine-Maxwell-Heidi-Klums-hookers-pimps-themed-party.html",
-			buttonText: "View on Daily Mail",
-		},
-		{
-			location: "New York, NY",
-			year: 2002,
-			month: "November",
-			day: 11,
-			description:
-				"Trump, Melania, Naomi Campbell, and Maxwell attending Dolce & Gabbana Opening.",
-			source:
-				"https://www.gettyimages.com/detail/news-photo/ghislaine-maxwell-naomi-campbell-donald-trump-and-melania-news-photo/1169684622",
-			buttonText: "View on Getty Images",
-		},
-	];
-
 	const formatDate = (year: number, month: string, day?: number) =>
 		`${month}${day ? ` ${day},` : ""} ${year}`;
 
@@ -269,22 +171,47 @@ const EmersonPoll = () => {
 		all: [
 			{ label: "Murder", value: 34, color: "bg-red-500" },
 			{ label: "Suicide", value: 33, color: "bg-blue-500" },
-			{ label: "Unsure", value: 33, color: "bg-gray-200" },
+			{ label: "Unsure", value: 33, color: "bg-gray-200" }, // Reported 32%, but rounded up.
 		],
 		democrats: [
-			{ label: "Murder", value: 26, color: "bg-red-500" },
-			{ label: "Suicide", value: 38, color: "bg-blue-500" },
-			{ label: "Unsure", value: 100 - (26 + 38), color: "bg-gray-200" },
+			{ label: "Murder", value: 26, color: "bg-red-500", difference: 26 - 34 },
+			{
+				label: "Suicide",
+				value: 38,
+				color: "bg-blue-500",
+				difference: 38 - 33,
+			},
+			{
+				label: "Unsure",
+				value: 100 - (26 + 38),
+				color: "bg-gray-200",
+				difference: 100 - (26 + 38) - 33,
+			}, // Implicit, didn't read primary source.
 		],
 		republicans: [
-			{ label: "Murder", value: 46, color: "bg-red-500" },
-			{ label: "Suicide", value: 26, color: "bg-blue-500" },
-			{ label: "Unsure", value: 100 - (46 + 26), color: "bg-gray-200" },
+			{ label: "Murder", value: 46, color: "bg-red-500", difference: 46 - 34 },
+			{
+				label: "Suicide",
+				value: 26,
+				color: "bg-blue-500",
+				difference: 26 - 33,
+			},
+			{
+				label: "Unsure",
+				value: 100 - (46 + 26),
+				color: "bg-gray-200",
+				difference: 100 - (46 + 26) - 33,
+			}, // Same comment as above.
 		],
 		independents: [
-			{ label: "Murder", value: 31, color: "bg-red-500" },
-			{ label: "Suicide", value: 37, color: "bg-blue-500" },
-			{ label: "Unsure", value: 100 - (31 + 37), color: "bg-gray-200" },
+			{ label: "Murder", value: 31, color: "bg-red-500", difference: 31 - 34 },
+			{
+				label: "Suicide",
+				value: 37,
+				color: "bg-blue-500",
+				difference: 37 - 33,
+			},
+			{ label: "Unsure", value: 32, color: "bg-gray-200", difference: 32 - 33 }, // Reported 33%, but rounded down to match total.
 		],
 	};
 
@@ -324,22 +251,37 @@ const YouGovPoll = () => {
 			{ label: "Unsure", value: 40, color: "bg-gray-200" },
 		],
 		democrats: [
-			{ label: "Murder", value: 38, color: "bg-red-500" },
-			{ label: "Suicide", value: 23, color: "bg-blue-500" },
-			{ label: "Accident", value: 1, color: "bg-green-500" },
-			{ label: "Unsure", value: 38, color: "bg-gray-200" },
+			{ label: "Murder", value: 38, color: "bg-red-500", difference: 38 - 39 },
+			{
+				label: "Suicide",
+				value: 23,
+				color: "bg-blue-500",
+				difference: 23 - 20,
+			},
+			{ label: "Accident", value: 1, color: "bg-green-500", difference: 0 },
+			{ label: "Unsure", value: 38, color: "bg-gray-200", difference: 38 - 40 },
 		],
 		republicans: [
-			{ label: "Murder", value: 43, color: "bg-red-500" },
-			{ label: "Suicide", value: 21, color: "bg-blue-500" },
-			{ label: "Accident", value: 1, color: "bg-green-500" },
-			{ label: "Unsure", value: 35, color: "bg-gray-200" },
+			{ label: "Murder", value: 43, color: "bg-red-500", difference: 43 - 39 },
+			{
+				label: "Suicide",
+				value: 21,
+				color: "bg-blue-500",
+				difference: 21 - 20,
+			},
+			{ label: "Accident", value: 1, color: "bg-green-500", difference: 0 },
+			{ label: "Unsure", value: 35, color: "bg-gray-200", difference: 35 - 40 },
 		],
 		independents: [
-			{ label: "Murder", value: 37, color: "bg-red-500" },
-			{ label: "Suicide", value: 17, color: "bg-blue-500" },
-			{ label: "Accident", value: 1, color: "bg-green-500" },
-			{ label: "Unsure", value: 45, color: "bg-gray-200" },
+			{ label: "Murder", value: 37, color: "bg-red-500", difference: 37 - 39 },
+			{
+				label: "Suicide",
+				value: 17,
+				color: "bg-blue-500",
+				difference: 17 - 20,
+			},
+			{ label: "Accident", value: 1, color: "bg-green-500", difference: 0 },
+			{ label: "Unsure", value: 45, color: "bg-gray-200", difference: 45 - 40 },
 		],
 	};
 

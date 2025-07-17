@@ -1,7 +1,7 @@
 # Haven't Read
 
 - [Vox --- The lawsuit accusing Trump of raping a 13-year-old girl, explained](https://www.vox.com/policy-and-politics/2016/11/3/13501364/trump-rape-13-year-old-lawsuit-katie-johnson-allegation), [Archive](https://archive.ph/A6Laq)
-- https://www.thedailybeast.com/trump-ex-chief-of-staff-makes-bombshell-claim-about-epstein-files/?utm_source=twitter_owned_tdb&utm_campaign=owned_social&via=twitter_page&utm_medium=socialflow
+- [The Daily Beast --- Trump Ex-Chief of Staff Makes Bombshell Claim About Epstein Files](https://www.thedailybeast.com/trump-ex-chief-of-staff-makes-bombshell-claim-about-epstein-files/)
 
 # Statements
 
