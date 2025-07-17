@@ -22,6 +22,24 @@
 
 - 1993, December --- Epstein attends Trump wedding to Marla Maples in Manhattan. [Dafydd Jones](https://www.dafjones.com/image?_bqG=9&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-)
 
+## Most Americans believe Jeffrey Epstein was murdered rather than died by suicide, though many remain uncertain.
+
+### August 24-26, 2019 --- [Emerson Polling](https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades)
+
+> **Voters are split regarding the cause of death of Billionaire convicted sex offender Jeffrey Epstein: 34% believe he was murdered, 33% believe he committed suicide, and 32% are unsure.** Party affiliation has a strong impact on what voters believe on this issue, as 46% of Republicans say it was murder vs. 26% say it was suicide. Among Democrats, 38% say it was suicide as compared to 26%b who believe he was murdered. Of Independents, 31% believe he was murdered, 37% believe he committed suicide, and 33% are unsure.
+
+### November 25, 2019 --- [Business Insider](https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11)
+
+> **45% of Americans baselessly believe that Jeffrey Epstein was murdered according to a new poll by Insider conducted on Surveymonkey Audience.**
+>
+> ...
+>
+> According to a new poll conducted by Insider, 45% of Americans believe the disgraced financier and sex offender was murdered, 16% believe he died by suicide, and 39% are unsure.
+
+### July 9, 2025 --- [YouGov](https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1)
+
+A 7,237 participant survey shows that **39% of Americans believe that Epstein was murdered,** 20% believe he committed suicide. Only 1% believe he died accidentally and 40% where unsure.
+
 ## During the 2024 presidential election, several MAGA influencers and future members of the Trump administration suggested that Trump would release the Epstein files if he became president.
 
 Already checked: [Michael Knowles](https://x.com/michaeljknowles)
@@ -101,24 +119,6 @@ On October 7, 2024, Charlie Kirk made the following [X post](https://x.com/charl
 Video footage hosted on [C-SPAN](https://www.c-span.org/program/public-affairs-event/laura-ingraham-speaks-at-turning-point-usa-summit/662447).
 
 ## President Trump, U.S. Attorney General Bondi, FBI director Patel, FBI deputy director said they would release the Epstein files.
-
-## Most Americans believe Jeffrey Epstein was murdered rather than died by suicide, though many remain uncertain.
-
-### August 24-26, 2019 --- [Emerson Polling](https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades)
-
-> **Voters are split regarding the cause of death of Billionaire convicted sex offender Jeffrey Epstein: 34% believe he was murdered, 33% believe he committed suicide, and 32% are unsure.** Party affiliation has a strong impact on what voters believe on this issue, as 46% of Republicans say it was murder vs. 26% say it was suicide. Among Democrats, 38% say it was suicide as compared to 26%b who believe he was murdered. Of Independents, 31% believe he was murdered, 37% believe he committed suicide, and 33% are unsure.
-
-### November 25, 2019 --- [Business Insider](https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11)
-
-> **45% of Americans baselessly believe that Jeffrey Epstein was murdered according to a new poll by Insider conducted on Surveymonkey Audience.**
->
-> ...
->
-> According to a new poll conducted by Insider, 45% of Americans believe the disgraced financier and sex offender was murdered, 16% believe he died by suicide, and 39% are unsure.
-
-### July 9, 2025 --- [YouGov](https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1)
-
-A 7,237 participant survey shows that **39% of Americans believe that Epstein was murdered,** 20% believe he committed suicide. Only 1% believe he died accidentally and 40% where unsure.
 
 ---
 

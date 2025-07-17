@@ -13,6 +13,27 @@ const Body = ({
 	</p>
 );
 
+const Header = ({ children }: { children: React.ReactNode }) => (
+	<h2 className="font-semibold text-gray-800">{children}</h2>
+);
+
+const Bold = ({ children }: { children: React.ReactNode }) => (
+	<span className="font-semibold text-gray-600">{children}</span>
+);
+
+const DatedSubheader = ({
+	children,
+	date,
+}: {
+	children: React.ReactNode;
+	date: string;
+}) => (
+	<div>
+		<time className="text-[8pt] text-gray-400">{date}</time>
+		<h3 className="font-semibold">{children}</h3>
+	</div>
+);
+
 const Divider = () => <hr className="my-4 border-t border-gray-200" />;
 
 const SourceButton = ({
@@ -312,7 +333,7 @@ function App() {
 	return (
 		<div className="flex justify-center">
 			<div className="w-[430px] my-8">
-				<h1 className="font-bold text-gray-800 mb-2">
+				<h1 className="text-lg font-bold text-gray-800 mb-2">
 					What you need to know about Trump & Epstein.
 				</h1>
 
@@ -331,10 +352,10 @@ function App() {
 				<Divider />
 
 				<article className="space-y-2">
-					<h2 className="font-semibold text-gray-800">
+					<Header>
 						There are at least 10 documented instances where Trump appeared in
 						photos with Epstein or Maxwell.
-					</h2>
+					</Header>
 					<Body>
 						These photos were taken at various events in New York City and
 						Mar-a-Lago. The earliest was in November 1992 and the latest was in
@@ -353,10 +374,10 @@ function App() {
 				<Divider />
 
 				<article className="space-y-2">
-					<h2 className="font-semibold text-gray-800">
+					<Header>
 						Most Americans believe Epstein was murdered, though many remain
 						unsure.
-					</h2>
+					</Header>
 					<Body>
 						On August 10, 2019, Epstein was found unresponsive in his
 						Metropolitan Correctional Center jail cell where he was awaiting
@@ -367,7 +388,6 @@ function App() {
 						/>
 					</Body>
 					<Body>
-						{" "}
 						This was about a month after he was arrested on July 6 at Teterboro
 						Airport in New Jersey.{" "}
 						<Link
@@ -386,17 +406,14 @@ function App() {
 					<Body>
 						To illustrate the public's adoption of the Epstein conspiracy, I
 						report polling results from Emerson College Polling, Business
-						Insider, and YouGov which asked Americans on the circumstances
+						Insider, and YouGov which asked Americans about the circumstances
 						around Epstein's death.
 					</Body>
 					<article className="mt-3">
 						<div className="flex items-center justify-between mt-1">
-							<div>
-								<time className="text-[8pt] text-gray-400">
-									August 24 - 26, 2019
-								</time>
-								<h3 className="font-semibold">Emerson College Polling</h3>
-							</div>
+							<DatedSubheader date="August 24 - 26, 2019">
+								Emerson College Polling
+							</DatedSubheader>
 							<SourceButton href="https://emersonpolling.reportablenews.com/pr/august-national-poll-sanders-closing-gap-with-biden-mayor-pete-fades">
 								View on Emerson Polling
 							</SourceButton>
@@ -407,11 +424,11 @@ function App() {
 							the 2020 Democratic primary and Trump's approval rating.
 						</Body>
 						<BlockQuote>
-							<span className="font-semibold text-gray-600">
+							<Bold>
 								Voters are split regarding the cause of death of Billionaire
 								convicted sex offender Jeffrey Epstein: 34% believe he was
 								murdered, 33% believe he committed suicide, and 32% are unsure.
-							</span>{" "}
+							</Bold>{" "}
 							Party affiliation has a strong impact on what voters believe on
 							this issue, as 46% of Republicans say it was murder vs. 26% say it
 							was suicide. Among Democrats, 38% say it was suicide as compared
@@ -421,14 +438,12 @@ function App() {
 						</BlockQuote>
 						<EmersonPoll />
 					</article>
+
 					<article>
 						<div className="flex items-center justify-between mt-1">
-							<div>
-								<time className="text-[8pt] text-gray-400">
-									November 22 - 23, 2019
-								</time>
-								<h3 className="font-semibold">Business Insider</h3>
-							</div>
+							<DatedSubheader date="November 22 - 23, 2019">
+								Business Insider
+							</DatedSubheader>
 							<SourceButton href="https://www.businessinsider.com/jeffrey-epstein-kill-himself-poll-2019-11">
 								View on Business Insider
 							</SourceButton>
@@ -442,16 +457,16 @@ function App() {
 							were not reported. They found:
 						</Body>
 						<BlockQuote>
-							<span className="font-semibold text-gray-600">
+							<Bold>
 								45% of Americans believe [Jeffrey Epstein] was murdered, 16%
 								believe he died by suicide, and 39% are unsure.
-							</span>{" "}
+							</Bold>{" "}
 							[...] 56% of Republicans and 44% of Democrats [now believe in] the
 							conspiracy theory. [Thus,] people on{" "}
-							<span className="font-semibold text-gray-600">
+							<Bold>
 								both sides of the aisle appear almost equally prone to
 								conspiracies.
-							</span>
+							</Bold>
 						</BlockQuote>
 						<IsotypeChart
 							data={[
@@ -463,12 +478,7 @@ function App() {
 					</article>
 					<article>
 						<div className="flex items-center justify-between mt-1">
-							<div>
-								<time className="text-[8pt] text-gray-400">
-									November 9, 2025
-								</time>
-								<h3 className="font-semibold">YouGov</h3>
-							</div>
+							<DatedSubheader date="November 9, 2025">YouGov</DatedSubheader>
 							<SourceButton href="https://today.yougov.com/topics/politics/survey-results/daily/2025/07/09/c7d65/1">
 								View on YouGov
 							</SourceButton>
@@ -477,10 +487,10 @@ function App() {
 							Almost six years later, YouGov conducted another poll on the
 							Epstein conspiracy and found similar results to Business Insider's
 							poll. Specifically, YouGov found that{" "}
-							<span className="font-semibold text-gray-600">
+							<Bold>
 								20% of Americans believed he committed suicide, 39% that he was
 								murdered, 1% that he died accidentally, and 40% were unsure.
-							</span>{" "}
+							</Bold>{" "}
 							In addition to collecting political affiliation—which showed
 							similar agreement across party lines—YouGov also reports splits
 							for region, gender, age, and race which you can see on their
@@ -488,6 +498,15 @@ function App() {
 						</Body>
 						<YouGovPoll />
 					</article>
+				</article>
+
+				<Divider />
+
+				<article>
+					<Header>
+						Trump has insinuated multiple times that he would release the
+						Epstein files.
+					</Header>
 				</article>
 			</div>
 		</div>
