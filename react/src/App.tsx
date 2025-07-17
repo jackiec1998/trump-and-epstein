@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useState, type JSX } from "react";
 import { appearances } from "./data";
+
+const Title = ({ children }: { children: React.ReactNode }) => (
+	<h1 className="text-2xl font-bold text-gray-900 mb-2">{children}</h1>
+);
 
 const Body = ({
 	children,
@@ -14,7 +18,9 @@ const Body = ({
 );
 
 const Header = ({ children }: { children: React.ReactNode }) => (
-	<h2 className="font-semibold text-gray-800">{children}</h2>
+	<h2 className="text-lg font-semibold text-gray-800 text-pretty">
+		{children}
+	</h2>
 );
 
 const Bold = ({ children }: { children: React.ReactNode }) => (
@@ -30,7 +36,7 @@ const DatedSubheader = ({
 }) => (
 	<div>
 		<time className="text-[8pt] text-gray-400">{date}</time>
-		<h3 className="font-semibold">{children}</h3>
+		<h3 className="font-semibold text-[11pt] text-gray-600">{children}</h3>
 	</div>
 );
 
@@ -152,6 +158,7 @@ const BlockQuote = ({ children }: { children: React.ReactNode }) => (
 		{children}
 	</blockquote>
 );
+
 const Timeline = () => {
 	const formatDate = (year: number, month: string, day?: number) =>
 		`${month}${day ? ` ${day},` : ""} ${year}`;
@@ -329,15 +336,92 @@ const YouGovPoll = () => {
 	);
 };
 
+const FoxNewsDialog = () => {
+	const chat: { person: string; text: string | JSX.Element }[] = [
+		{
+			person: "Rachel Campos-Duffy",
+			text: "If you were president, would you declassify—you can answer yes or no to these—would you declassify the 9/11 files?",
+		},
+		{
+			person: "Donald Trump",
+			text: "Yeah.",
+		},
+		{
+			person: "Rachel Campos-Duffy",
+			text: "Would you declassify [the] JFK files?",
+		},
+		{
+			person: "Donald Trump",
+			text: "Yeah. I did. I did a lot of it.",
+		},
+		{
+			person: "Rachel Campos-Duffy",
+			text: "Would you declassify the Epstein files?",
+		},
+		{
+			person: "Donald Trump",
+			text: (
+				<>
+					<span className="font-semibold text-black">Yeah, yeah. I would.</span>{" "}
+					I guess I would. I think that less so because—you know, you don't
+					know—you don't want to affect people's lives if it's phony stuff in
+					there, 'cause it's a lot of phony stuff with that whole world. But I
+					think I would, or at least-
+				</>
+			),
+		},
+		{
+			person: "Rachel Campos-Duffy",
+			text: "You think that would restore trust, help restore trust?",
+		},
+		{
+			person: "Donald Trump",
+			text: "Yeah. I don't know about Epstein so much as I do the others, certainly about the way he died. It'd be interesting to find out what happened there, because that was a weird situation and the cameras didn't happen to be working, et cetera, et cetera. But I'd go a long way toward that one.",
+		},
+	];
+
+	const Avatar = ({ src }: { src: string }) => (
+		<img src={src} className="w-7 h-7 rounded-full mb-0.5" />
+	);
+
+	return (
+		<div className=" relative flex flex-col space-y-4 mt-6">
+			{chat.map(({ person, text }, index) => (
+				<div
+					key={index}
+					className={`flex flex-row items-end ${
+						person === "Rachel Campos-Duffy" ? "justify-end" : "justify-start"
+					}`}
+				>
+					{person === "Donald Trump" && <Avatar src="/src/assets/trump.jpg" />}
+					<div
+						className={`border border-gray-200 rounded-md p-3 mx-3 bg-gray-50 text-xs text-gray-700 w-auto max-w-[300px] ${
+							person === "Donald Trump" ? "rounded-bl-none" : "rounded-br-none"
+						}`}
+					>
+						<p>{text}</p>
+						<p className="text-gray-400 mt-2">{person}</p>
+					</div>
+					{person === "Rachel Campos-Duffy" && (
+						<Avatar src="/src/assets/rachel.jpg" />
+					)}
+				</div>
+			))}
+		</div>
+	);
+};
+
 function App() {
 	return (
 		<div className="flex justify-center">
 			<div className="w-[430px] my-8">
-				<h1 className="text-lg font-bold text-gray-800 mb-2">
-					What you need to know about Trump & Epstein.
-				</h1>
+				<Title>A Curated Fact Sheet on Trump & the Epstein Conspiracy</Title>
 
-				<Body>Some facts about Trump and his relationship with Epstein:</Body>
+				<Body>
+					I mostly did this for myself, but I hope you find it useful or at
+					least entertaining.
+				</Body>
+				<Body>Below are the list of key points:</Body>
 				<ul className="list-disc ml-6 text-xs text-gray-500 leading-relaxed">
 					<li className="">
 						There are at least 10 documented instances where Trump appeared in
@@ -507,6 +591,25 @@ function App() {
 						Trump has insinuated multiple times that he would release the
 						Epstein files.
 					</Header>
+					<article>
+						<DatedSubheader date="June 3, 2024">
+							On the Will Cain Show (Fox News), Trump suggested he would release
+							the Epstein files if elected president.
+						</DatedSubheader>
+						<div className="w-full aspect-video my-5">
+							<iframe
+								className="w-full h-full"
+								src="https://www.youtube.com/embed/HVKRNcQUbRY?si=KTtL0554FuJRyKNT&start=2119"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+							></iframe>
+						</div>
+						<Body>
+							For your convenience, here is a transcript of the relevant
+							exchange:
+						</Body>
+						<FoxNewsDialog />
+					</article>
 				</article>
 			</div>
 		</div>
