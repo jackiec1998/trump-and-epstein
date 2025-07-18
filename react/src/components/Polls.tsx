@@ -221,10 +221,10 @@ const YouGovPoll = () => {
 	);
 };
 
-export const Polls = ({ title }: { title: string }) => {
+export const Polls = ({ title, id }: { title: string; id: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>{title}</Header>
+			<Header id={id}>{title}</Header>
 			<Body>
 				On August 10, 2019, Epstein was found unresponsive in his Metropolitan
 				Correctional Center jail cell where he was awaiting trial.{" "}

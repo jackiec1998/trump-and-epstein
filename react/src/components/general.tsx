@@ -14,10 +14,27 @@ export const Body = ({
 	</p>
 );
 
-export const Header = ({ children }: { children: React.ReactNode }) => (
-	<h2 className="text-lg font-semibold text-gray-800 text-pretty">
-		{children}
-	</h2>
+export const Header = ({
+	children,
+	id,
+}: {
+	children: React.ReactNode;
+	id: string;
+}) => (
+	<a href={`#${id}`} className="no-underline">
+		<h2
+			id={id}
+			className="group relative text-lg font-semibold text-gray-800 text-pretty scroll-mt-6"
+		>
+			<a
+				href={`#${id}`}
+				className="absolute -left-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-gray-400 hover:text-gray-600"
+			>
+				#
+			</a>
+			{children}
+		</h2>
+	</a>
 );
 
 export const Bold = ({ children }: { children: React.ReactNode }) => (

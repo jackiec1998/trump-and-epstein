@@ -192,10 +192,10 @@ const LexFridmanTranscript = () => {
 	return <Chat chat={chat} avatars={avatars} alignment={alignment} />;
 };
 
-export const Quotes = ({ title }: { title: string }) => {
+export const Quotes = ({ title, id }: { title: string; id: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>{title}</Header>
+			<Header id={id}>{title}</Header>
 			<article>
 				<DatedSubheader date="June 3, 2024">
 					On the Will Cain Show (Fox News)

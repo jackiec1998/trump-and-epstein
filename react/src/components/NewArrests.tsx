@@ -1,9 +1,9 @@
 import { Body, Header } from "./general";
 
-export const NewArrests = ({ title }: { title: string }) => {
+export const NewArrests = ({ title, id }: { title: string; id: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>{title}</Header>
+			<Header id={id}>{title}</Header>
 			<Body>
 				Just in case it does happen, I have dedicated this spot on the page for
 				it.

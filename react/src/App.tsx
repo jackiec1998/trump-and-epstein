@@ -32,19 +32,19 @@ function App() {
 
 					<Divider />
 
-					<PhotosTogether title={statements[0]} />
+					<PhotosTogether title={statements[0]} id={"photos-together"} />
 
 					<Divider />
 
-					<Polls title={statements[1]} />
+					<Polls title={statements[1]} id={"polls"} />
 
 					<Divider />
 
-					<Quotes title={statements[2]} />
+					<Quotes title={statements[2]} id={"quotes"} />
 
 					<Divider />
 
-					<NewArrests title={statements[3]} />
+					<NewArrests title={statements[3]} id={"new-arrests"} />
 				</div>
 			</div>
 			<Footer />

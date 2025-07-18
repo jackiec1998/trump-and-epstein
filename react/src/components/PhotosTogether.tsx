@@ -146,10 +146,16 @@ const Timeline = () => {
 	);
 };
 
-export const PhotosTogether = ({ title }: { title: string }) => {
+export const PhotosTogether = ({
+	title,
+	id,
+}: {
+	title: string;
+	id: string;
+}) => {
 	return (
 		<article className="space-y-2">
-			<Header>{title}</Header>
+			<Header id={id}>{title}</Header>
 			<Body>
 				These photos were taken at various events in New York City and
 				Mar-a-Lago. The earliest was in November 1992 and the latest was in
