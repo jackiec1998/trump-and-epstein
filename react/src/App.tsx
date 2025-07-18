@@ -336,7 +336,45 @@ const YouGovPoll = () => {
 	);
 };
 
-const FoxNewsDialog = () => {
+const Chat = ({
+	chat,
+	avatars,
+	alignment,
+}: {
+	chat: { person: string; text: string | JSX.Element }[];
+	avatars: { [key: string]: string };
+	alignment: { [key: string]: "left" | "right" };
+}) => {
+	const Avatar = ({ src }: { src: string }) => (
+		<img src={src} className="w-7 h-7 rounded-full mb-0.5" />
+	);
+
+	return (
+		<div className=" relative flex flex-col space-y-4 mt-6">
+			{chat.map(({ person, text }, index) => (
+				<div
+					key={index}
+					className={`flex flex-row items-end ${
+						alignment[person] === "right" ? "justify-end" : "justify-start"
+					}`}
+				>
+					{alignment[person] === "left" && <Avatar src={avatars[person]} />}
+					<div
+						className={`border border-gray-200 rounded-md p-3 mx-3 bg-gray-50 text-xs text-gray-700 w-auto max-w-[300px] ${
+							person === "Donald Trump" ? "rounded-bl-none" : "rounded-br-none"
+						}`}
+					>
+						<p>{text}</p>
+						<p className="text-gray-400 mt-2">{person}</p>
+					</div>
+					{alignment[person] === "right" && <Avatar src={avatars[person]} />}
+				</div>
+			))}
+		</div>
+	);
+};
+
+const FoxNewsTranscript = () => {
 	const chat: { person: string; text: string | JSX.Element }[] = [
 		{
 			person: "Rachel Campos-Duffy",
@@ -362,7 +400,9 @@ const FoxNewsDialog = () => {
 			person: "Donald Trump",
 			text: (
 				<>
-					<span className="font-semibold text-black">Yeah, yeah. I would.</span>{" "}
+					<span className="font-semibold text-gray-800">
+						Yeah, yeah. I would.
+					</span>{" "}
 					I guess I would. I think that less so because—you know, you don't
 					know—you don't want to affect people's lives if it's phony stuff in
 					there, 'cause it's a lot of phony stuff with that whole world. But I
@@ -380,35 +420,111 @@ const FoxNewsDialog = () => {
 		},
 	];
 
-	const Avatar = ({ src }: { src: string }) => (
-		<img src={src} className="w-7 h-7 rounded-full mb-0.5" />
-	);
+	const avatars = {
+		"Donald Trump": "/src/assets/trump.jpg",
+		"Rachel Campos-Duffy": "/src/assets/rachel.jpg",
+	};
 
-	return (
-		<div className=" relative flex flex-col space-y-4 mt-6">
-			{chat.map(({ person, text }, index) => (
-				<div
-					key={index}
-					className={`flex flex-row items-end ${
-						person === "Rachel Campos-Duffy" ? "justify-end" : "justify-start"
-					}`}
-				>
-					{person === "Donald Trump" && <Avatar src="/src/assets/trump.jpg" />}
-					<div
-						className={`border border-gray-200 rounded-md p-3 mx-3 bg-gray-50 text-xs text-gray-700 w-auto max-w-[300px] ${
-							person === "Donald Trump" ? "rounded-bl-none" : "rounded-br-none"
-						}`}
-					>
-						<p>{text}</p>
-						<p className="text-gray-400 mt-2">{person}</p>
-					</div>
-					{person === "Rachel Campos-Duffy" && (
-						<Avatar src="/src/assets/rachel.jpg" />
-					)}
+	const alignment: { [key: string]: "left" | "right" } = {
+		"Donald Trump": "left",
+		"Rachel Campos-Duffy": "right",
+	};
+
+	return <Chat chat={chat} avatars={avatars} alignment={alignment} />;
+};
+
+const LexFridmanTranscript = () => {
+	const chat: { person: string; text: string | JSX.Element }[] = [
+		{
+			person: "Lex Fridman",
+			text: "There's a moment were you had some hesitation about Epstein, releasing some of the documents on Epstein. Why the hesitation?",
+		},
+		{
+			person: "Donald Trump",
+			text: (
+				<>
+					I don't think I had... I mean,{" "}
+					<span className="font-semibold text-gray-800">
+						I'm not involved. I never went to his island, fortunately.
+					</span>{" "}
+					But a lot of people did.
+				</>
+			),
+		},
+		{
+			person: "Lex Fridman",
+			text: "Why do you think so many smart, powerful people allowed him to get so close?",
+		},
+		{
+			person: "Donald Trump",
+			text: (
+				<>
+					He was a good salesman. He was a hailing hardy type of guy. He had
+					some nice assets that he'd throw around like islands. But a lot of big
+					people went to that island.{" "}
+					<span className="font-semibold text-gray-800">
+						But fortunately I was not one of them.
+					</span>
+				</>
+			),
+		},
+		{
+			person: "Lex Fridman",
+			text: "It's just very strange for a lot of people that the list of clients that went to the island has not been made public.",
+		},
+		{
+			person: "Donald Trump",
+			text: (
+				<>
+					Yeah, it's very interesting isn't it?{" "}
+					<span className="font-semibold text-gray-800">
+						Probably will be by the way. Probably.
+					</span>
+				</>
+			),
+		},
+		{
+			person: "Lex Fridman",
+			text: "So if you are able to [release the client list], you'll be...",
+		},
+		{
+			person: "Donald Trump",
+			text: (
+				<div className="space-y-2">
+					<p>
+						<span className="font-semibold text-gray-800">
+							I'd certainly take a look at it.
+						</span>
+					</p>
+					<p>
+						Now, Kennedy's interesting 'cause it's so many years ago. You know,
+						they do that for danger too, because you know, endangers certain
+						people, et cetera. So Kennedy is very different from the Epstein
+						thing.
+					</p>
+					<p>
+						<span className="font-semibold text-gray-800">
+							But yeah, I'd be inclined to do the Epstein [thing]. I'd have no
+							problem with it.
+						</span>
+					</p>
 				</div>
-			))}
-		</div>
-	);
+			),
+		},
+		{ person: "Lex Fridman", text: "That's great to hear." },
+	];
+
+	const avatars = {
+		"Donald Trump": "/src/assets/trump.jpg",
+		"Lex Fridman": "/src/assets/lex.png",
+	};
+
+	const alignment: { [key: string]: "left" | "right" } = {
+		"Donald Trump": "left",
+		"Lex Fridman": "right",
+	};
+
+	return <Chat chat={chat} avatars={avatars} alignment={alignment} />;
 };
 
 function App() {
@@ -586,19 +702,18 @@ function App() {
 
 				<Divider />
 
-				<article>
+				<article className="space-y-2">
 					<Header>
 						Trump has insinuated multiple times that he would release the
 						Epstein files.
 					</Header>
 					<article>
 						<DatedSubheader date="June 3, 2024">
-							On the Will Cain Show (Fox News), Trump suggested he would release
-							the Epstein files if elected president.
+							On the Will Cain Show (Fox News)
 						</DatedSubheader>
 						<div className="w-full aspect-video my-5">
 							<iframe
-								className="w-full h-full"
+								className="w-full h-full rounded-xl"
 								src="https://www.youtube.com/embed/HVKRNcQUbRY?si=KTtL0554FuJRyKNT&start=2119"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								referrerPolicy="strict-origin-when-cross-origin"
@@ -608,7 +723,22 @@ function App() {
 							For your convenience, here is a transcript of the relevant
 							exchange:
 						</Body>
-						<FoxNewsDialog />
+						<FoxNewsTranscript />
+					</article>
+					<article className="mt-6">
+						<DatedSubheader date="September 3, 2025">
+							On the Lex Fridman Podcast
+						</DatedSubheader>
+						<div className="w-full aspect-video my-5">
+							<iframe
+								className="w-full h-full rounded-xl"
+								src="https://www.youtube.com/embed/qCbfTN-caFI?si=5oPTJ37jzaId76ir&start=2657"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+							></iframe>
+						</div>
+						<Body>Again, here's the back-and-forth:</Body>
+						<LexFridmanTranscript />
 					</article>
 				</article>
 			</div>

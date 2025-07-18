@@ -49,21 +49,7 @@ A lot of credit should go to [Nik Popli at Time Magazine](https://time.com/73029
 
 ### 2024, June 3 --- Trump on [Fox News, Will Cain Show](https://www.youtube.com/watch?v=HVKRNcQUbRY&list=PLlTLHnxSVuIzi_tPVKjt5y7KMgvlch5o6&t=2119s)
 
-> Rachel Campos-Duffy: If you were president, would you declassify--you can answer yes or no to these---would you declassify the 9/11 files?
->
-> Trump: Yeah.
->
-> Rachel Campos-Duffy: Would you declassify [the] JFK files.
->
-> Trump: Yeah, yeah. I did. I did a lot of it.
->
-> Rachel Campos-Duffy: Would you declassify the Epstein files?
->
-> Trump: Yeah, yeah. I would. I guess I would. I think that less so because you know you don't know, you don't want to affect people's lives if it's phony stuff in there because that was a weird situation and the cameras didn’t happen to be working, etc., etc. But yeah, I’d go a long way toward that one.
->
-> Rachel Campos-Duffy: Do you think that would restore trust?
->
-> Trump: Yeah. I don't know much about Epstein so much as I do the others. Certainly about the way he died it would be interesting to find out what happened there because that was a weird situation and the cameras didn't happen to be working et cetera, et cetera.
+Transcript available [here](https://www.rev.com/transcripts/donald-trump-interview-on-the-will-cain-show).
 
 YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/donald-trump-jeffrey-epstein-fox-news_n_6667330de4b019027bc727f4). [Semafor](https://www.semafor.com/article/06/09/2024/how-fox-news-massaged-a-trump-interview?utm_campaign=semaforreddit) also reported on this.
 
@@ -71,7 +57,7 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
 
 > Lex Fridman: There's a moment were you had some hesitation about Epstein, releasing some of the documents on Epstein. Why the hesitation?
 >
-> Trump: I don't think I had... I mean, I'm not involved. I never went tohis island, fortunately. But a lot of people did.
+> Trump: I don't think I had... I mean, I'm not involved. I never went to his island, fortunately. But a lot of people did.
 >
 > Lex Fridman: Why do you think so many smart, powerful people allowed him to get so close?
 >
@@ -170,6 +156,8 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
 
 - 2025, July 14 --- [Axios](https://www.axios.com/2025/07/15/trump-epstein-khanna-doj-democrats-republicans)/[Archive](https://archive.ph/U7u4P): _House GOP blocks Dem maneuver to force release of Epstein files_
 
+- 2025, July 17 --- According to [WSJ](https://www.wsj.com/politics/trump-jeffrey-epstein-birthday-letter-we-have-certain-things-in-common-f918d796), Trump's birthday card to Epstein says: "Happy Birthday — and may every day be another wonderful secret."
+
 ---
 
 # Social Media Posts
@@ -182,6 +170,7 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
 - 2025, July 16 --- @elonmusk, [X](https://x.com/elonmusk/status/1945549669062385874)
   - @elonmusk, [X](https://x.com/elonmusk/status/1945559801066655848)
   - @MattWalshBlog, [X](https://x.com/MattWalshBlog/status/1945558994635935995)
+- 2025, July 17 --- @elonmusk, [X](https://x.com/elonmusk/status/1945967524564369877)
 
 ---
 
