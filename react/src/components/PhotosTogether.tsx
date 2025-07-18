@@ -1,4 +1,6 @@
-export const appearances: {
+import { Body, Header, SourceButton } from "./general";
+
+const appearances: {
 	location: string;
 	year: number;
 	month: string;
@@ -112,3 +114,58 @@ export const appearances: {
 		buttonText: "View on Getty Images",
 	},
 ];
+
+const Timeline = () => {
+	const formatDate = (year: number, month: string, day?: number) =>
+		`${month}${day ? ` ${day},` : ""} ${year}`;
+
+	const Bullet = () => (
+		<div className="absolute w-3 h-3 bg-gray-200 rounded-full -start-[6.5px] mt-[8.5px] border-2 border-white"></div>
+	);
+
+	return (
+		<ol className="relative ml-2 border-s border-gray-200 space-y-4 mt-4 pb-2">
+			{appearances.map((appearance, index) => (
+				<li key={index} className="ml-4 w-[320px] space-y-1">
+					<Bullet />
+					<time className="text-[7pt] text-gray-400">
+						{formatDate(appearance.year, appearance.month, appearance.day)}
+					</time>
+					<p className="text-[10pt] font-semibold text-gray-800">
+						{appearance.location}
+					</p>
+					<p className="text-xs leading-relaxed text-gray-500 text-pretty">
+						{appearance.description}
+					</p>
+					<SourceButton href={appearance.source} className="mt-1">
+						{appearance.buttonText}
+					</SourceButton>
+				</li>
+			))}
+		</ol>
+	);
+};
+
+export const PhotosTogether = () => {
+	return (
+		<article className="space-y-2">
+			<Header>
+				There are at least 10 documented instances where Trump appeared in
+				photos with Epstein or Maxwell.
+			</Header>
+			<Body>
+				These photos were taken at various events in New York City and
+				Mar-a-Lago. The earliest was in November 1992 and the latest was in
+				2002.
+			</Body>
+			<Timeline />
+			<Body className="mt-3">
+				Although not pictured together, Epstein was also photographed attending
+				Trump's wedding to Marla Maples in December 1993.
+			</Body>
+			<SourceButton href="https://www.dafjones.com/image?_bqG=9&_bqH=eJxtT9tOAyEQ_Zrum0k1rds24YEyuE7chWaAtjwRNZvWeO3txa.X2TS6UUk4nAsHMrR52U_K0y6tN_5UXm9Ho_p2GtcXK_U8u5rOLodD3hkxgVOi_Tgc26e3ApMD6fVgPG.awRhEzwBgA6BnxbzY5DPb.ndV_63q_6sKfew.8zlmomwwnmJCZ1laQm1yhtawRJdI11o6DWe56GtnyQuS5q7opkvSgDhmHpymhCACT17tHj7LyYJWr.85WiL5IOskK21U5EtFUvOE.eFcPdPwTenmhzZMpfLi0N7vH7fFsmtXHSrGL66gcaU-">
+				View on Dafydd Jones
+			</SourceButton>
+		</article>
+	);
+};
