@@ -6,6 +6,14 @@
 - [Time --- Amid Campaign, Trump Kept Epstein Issue at Arm’s Length. His Allies Did Not](https://time.com/7302995/donald-trump-jeffrey-epstein-jd-vance/?utm_source=chatgpt.com)
 - [The New York Times --- In Epstein Case, Follow the Money, Democratic Senator Says](https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html?unlocked_article_code=1.XE8.Htgu.HiwOJbDA06Zd&smid=url-share)
 
+---
+
+# Other Stuff
+
+- [Kalshi Betting Market](https://kalshi.com/markets/kxepstein/epstein-documents)
+
+---
+
 # Statements
 
 ## There are at least 10 documented instances where Donald Trump appeared in photos with Jeffrey Epstein or Ghislaine Maxwell.
@@ -77,11 +85,54 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
 >
 > Lex Fridman: That's great to hear.
 
-## 2024, October 22 --- JD Vance on [Theo Von's Podcast](https://youtu.be/vd8mmTDDqAs?si=deFwyhqmRsb8HjEx&t=2761)
+### 2024, October 22 --- JD Vance on [Theo Von's Podcast](https://youtu.be/vd8mmTDDqAs?si=deFwyhqmRsb8HjEx&t=2761)
 
 > Theo Von: Release the list!
 >
 > Vance: Seriously, we need to release the Epstein list. That is an important thing. We can go down that rabbit hole, but anyway.
+
+## MAGA influncers and supporters have been vocal about Epstein, calling Trump to release the files.
+
+Aggregated sources: [Reddit, r/agedlikemilk](https://www.reddit.com/r/agedlikemilk/comments/1lztnih/a_list_of_maga_before_and_after_the_epstein_list/)
+
+Checked: [@benshapiro](https://x.com/benshapiro), [@bennyshow](https://x.com/bennyjohnson), [@michaeljknowles](https://x.com/michaeljknowles)
+
+- 2024, October 7 --- [@charliekirk11](https://x.com/charliekirk11/status/1843421097628512758)
+  - 2019, August 10 --- [@charliekirk11](https://x.com/charliekirk11/status/1160332165151961089)
+- 2024, November 5 --- [@libsoftiktok](https://x.com/libsoftiktok/status/1853885016507547665)
+- 2025, January 29 --- [@Riley_Gaines\_](https://x.com/Riley_Gaines_/status/1884808440188436899)
+  - 2025, January 23 --- [@Riley_Gaines\_](https://x.com/Riley_Gaines_/status/1882456778254037180)
+  - 2025, January 30 --- [@Riley_Gaines\_](https://x.com/Riley_Gaines_/status/1885043332138561705)
+  - 2025, February 27 --- [@Riley_Gaines\_](https://x.com/Riley_Gaines_/status/1895034330063274336)
+- 2025, February 5 --- [@DineshDSouza](https://x.com/DineshDSouza/status/1887164256623194400)
+- 2025, February 20 --- [@catturd2](https://x.com/catturd2/status/1892736893294404067)
+  - 2025, February 18 --- [@catturd2](https://x.com/catturd2/status/1891928529102655518)
+- 2025, February 21 --- [@Timcast](https://x.com/Timcast/status/1893018871201775712)
+
+### Other
+
+- 2025, July 12 --- [@GuntherEagleman](https://x.com/GuntherEagleman/status/1944010425651085513)
+  - 2025, July 8 --- [@GuntherEagleman](https://x.com/GuntherEagleman/status/1942772286127497401)
+  - 2025 July 11 --- [@GuntherEagleman](https://x.com/GuntherEagleman/status/1943855356288843913)
+
+## Frustration With Epstein Release
+
+- 2025, March 1 --- [@LauraLoomer](https://x.com/LauraLoomer/status/1895701969508892811)
+  - 2025, March 4 --- [@LauraLoomer](https://x.com/LauraLoomer/status/1897055424186343548)
+- 2025, July 6 --- [@Cernovich](https://x.com/Cernovich/status/1942048521034830100)
+- 2025, July 7 --- [@Timcast](https://x.com/Timcast/status/1942210207049740668)
+  - 2025, July 15 --- [@Timcast](https://x.com/Timcast/status/1945088501508194752)
+  - 2025, July 15 --- [@Timcast](https://x.com/Timcast/status/1945094370681623010)
+- 2025, July 8 --- [@GuntherEagleman](https://x.com/GuntherEagleman/status/1942574587406848360)
+  - 2025, July 9 --- [@GuntherEagleman](https://x.com/GuntherEagleman/status/1942949790813155360)
+
+### July 11, 2025 --- Turing Point USA Student Action Summit Boos
+
+> Fox News host Laura Ingraham polled the summit crowd: “How many of you are satisfied — you can clap — satisfied with the result of the Epstein investigation?”
+>
+> She received overwhelming boos. [CNN](https://www.cnn.com/2025/07/14/politics/epstein-fallout-trump-maga)
+
+Video footage hosted on [C-SPAN](https://www.c-span.org/program/public-affairs-event/laura-ingraham-speaks-at-turning-point-usa-summit/662447).
 
 ---
 
@@ -171,85 +222,3 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
   - @elonmusk, [X](https://x.com/elonmusk/status/1945559801066655848)
   - @MattWalshBlog, [X](https://x.com/MattWalshBlog/status/1945558994635935995)
 - 2025, July 17 --- @elonmusk, [X](https://x.com/elonmusk/status/1945967524564369877)
-
----
-
-# Drafts / WIP
-
-## During the 2024 presidential election, several MAGA influencers and future members of the Trump administration suggested that Trump would release the Epstein files if he became president.
-
-Already checked: [Michael Knowles](https://x.com/michaeljknowles)
-
-https://kalshi.com/markets/kxepstein/epstein-documents
-
-### [Charlie Kirk](https://en.wikipedia.org/wiki/Charlie_Kirk)
-
-On October 7, 2024, Charlie Kirk made the following [X post](https://x.com/charliekirk11/status/1843421097628512758):
-
-> Just as Hollywood will be a safer place once all those who helped Diddy commit his crimes are exposed, one of the surest ways to rid our billionaire class of the corruption and cowardice that currently plagues it, is to release the Epstein list.
->
-> Vote Trump to release the list!!
-
-### [Benny Johnson]()
-
-1. https://x.com/bennyjohnson/status/1896722273522130957
-1. https://x.com/bennyjohnson/status/1901350501842600093
-
-### [Ben Shapiro]()
-
-1. https://x.com/benshapiro/status/1098997810597310464
-1. https://x.com/benshapiro/status/1253699234517282821
-1. https://x.com/benshapiro/status/1163540296459665408
-
-### [Gunther Eagleman]()
-
-1. https://x.com/GuntherEagleman/status/1942574587406848360
-1. https://x.com/GuntherEagleman/status/1944010425651085513
-1. https://x.com/GuntherEagleman/status/1942772286127497401
-1. https://x.com/GuntherEagleman/status/1943855356288843913
-1. https://x.com/GuntherEagleman/status/1942949790813155360
-
-### [Tim Pool]()
-
-1. https://x.com/Timcast/status/1895196506497654913
-1. https://x.com/Timcast/status/1893018871201775712
-1. https://x.com/Timcast/status/1942210207049740668
-1. https://x.com/Timcast/status/1945088501508194752
-1. https://x.com/Timcast/status/1945094370681623010
-1. https://x.com/Timcast/status/1945107733167866359
-
-### [Riley Gaines](https://en.wikipedia.org/wiki/Riley_Gaines)
-
-1. https://x.com/Riley_Gaines_/status/1884808440188436899
-1. https://x.com/Riley_Gaines_/status/1882456778254037180
-1. https://x.com/Riley_Gaines_/status/1885043332138561705
-
-### [Libs of TikTok (Chaya Raichik)](https://en.wikipedia.org/wiki/Libs_of_TikTok)
-
-1. https://x.com/libsoftiktok/status/1893006103157334271
-1. https://x.com/libsoftiktok/status/1894921361916584164
-1. https://x.com/libsoftiktok/status/1896756958960796004
-1. https://x.com/libsoftiktok/status/1889377577166340322
-1. https://x.com/libsoftiktok/status/1889405201976537225
-1. https://x.com/libsoftiktok/status/1831032658069184971 (Lex Fridman clip)
-1. https://x.com/libsoftiktok/status/1854120892307279948
-1. https://x.com/libsoftiktok/status/1853885016507547665
-
-### [Dinesh D'Souza](https://en.wikipedia.org/wiki/Dinesh_D%27Souza)
-
-1. https://x.com/DineshDSouza/status/1887164256623194400
-
-## Several MAGA influences have expressed their frustration with Trump's handling of the Epstein files.
-
-### Social Media Posts
-
-1. Tim Pool
-   1. July 7, 2025: https://x.com/Timcast/status/1942210207049740668
-
-### July 11, 2025 --- Turing Point USA Student Action Summit Boos
-
-> Fox News host Laura Ingraham polled the summit crowd: “How many of you are satisfied — you can clap — satisfied with the result of the Epstein investigation?”
->
-> She received overwhelming boos. [CNN](https://www.cnn.com/2025/07/14/politics/epstein-fallout-trump-maga)
-
-Video footage hosted on [C-SPAN](https://www.c-span.org/program/public-affairs-event/laura-ingraham-speaks-at-turning-point-usa-summit/662447).

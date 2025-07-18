@@ -4,16 +4,24 @@ import { PhotosTogether } from "./components/PhotosTogether";
 import { Quotes } from "./components/Quotes";
 import { Footer } from "./components/Footer";
 import { Polls } from "./components/Polls";
+import { SocialMedia } from "./components/SocialMedia";
 
 function App() {
 	const statements = [
 		"There are at least 10 documented instances of Trump appearing in photos with Epstein or Maxwell.",
 		"Most Americans believe Epstein was murdered, though many remain unsure.",
 		"Trump has insinuated multiple times that he would release the Epstein files.",
-		"No new arrests, charges, or convictions have resulted from Trump's actions regarding the Epstein files.",
+		"MAGA has been vehemently supportive of releasing the Epstein files.",
+		"No new arrests, charges, or convictions have resulted from Trump's actions regarding Epstein.",
 	];
 
-	const ids = ["photos-together", "polls", "quotes", "new-arrests"];
+	const ids = [
+		"photos-together",
+		"polls",
+		"quotes",
+		"social-media",
+		"new-arrests",
+	];
 
 	return (
 		<div>
@@ -28,7 +36,7 @@ function App() {
 					<Body>Below are the list of key points:</Body>
 					<ul className="list-disc ml-6 text-xs text-gray-500 leading-relaxed">
 						{statements.map((statement, index) => (
-							<li key={index}>
+							<li key={index} className="pl-1">
 								<a href={`#${ids[index]}`} className="hover:underline">
 									{statement}
 								</a>
@@ -50,7 +58,11 @@ function App() {
 
 					<Divider />
 
-					<NewArrests title={statements[3]} id={"new-arrests"} />
+					<SocialMedia title={statements[3]} id={"social-media"} />
+
+					<Divider />
+
+					<NewArrests title={statements[4]} id={"new-arrests"} />
 				</div>
 			</div>
 			<Footer />
