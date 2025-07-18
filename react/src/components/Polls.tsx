@@ -221,12 +221,10 @@ const YouGovPoll = () => {
 	);
 };
 
-export const Polls = () => {
+export const Polls = ({ title }: { title: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>
-				Most Americans believe Epstein was murdered, though many remain unsure.
-			</Header>
+			<Header>{title}</Header>
 			<Body>
 				On August 10, 2019, Epstein was found unresponsive in his Metropolitan
 				Correctional Center jail cell where he was awaiting trial.{" "}

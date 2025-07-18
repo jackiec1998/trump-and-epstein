@@ -1,9 +1,13 @@
-import { Header } from "./general";
+import { Body, Header } from "./general";
 
-export const NewArrests = () => {
+export const NewArrests = ({ title }: { title: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>New Arrests & Convictions Due to Trump's Actions</Header>
+			<Header>{title}</Header>
+			<Body>
+				Just in case it does happen, I have dedicated this spot on the page for
+				it.
+			</Body>
 			<div className="border border-gray-300 h-[250px] my-4 rounded-lg border-dashed flex items-center justify-center text-gray-400 text-[10pt]">
 				Blank
 			</div>

@@ -192,13 +192,10 @@ const LexFridmanTranscript = () => {
 	return <Chat chat={chat} avatars={avatars} alignment={alignment} />;
 };
 
-export const Quotes = () => {
+export const Quotes = ({ title }: { title: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>
-				Trump has insinuated multiple times that he would release the Epstein
-				files.
-			</Header>
+			<Header>{title}</Header>
 			<article>
 				<DatedSubheader date="June 3, 2024">
 					On the Will Cain Show (Fox News)

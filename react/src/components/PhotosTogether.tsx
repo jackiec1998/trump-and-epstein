@@ -146,13 +146,10 @@ const Timeline = () => {
 	);
 };
 
-export const PhotosTogether = () => {
+export const PhotosTogether = ({ title }: { title: string }) => {
 	return (
 		<article className="space-y-2">
-			<Header>
-				There are at least 10 documented instances where Trump appeared in
-				photos with Epstein or Maxwell.
-			</Header>
+			<Header>{title}</Header>
 			<Body>
 				These photos were taken at various events in New York City and
 				Mar-a-Lago. The earliest was in November 1992 and the latest was in

@@ -37,7 +37,9 @@ export const DatedSubheader = ({
 	</div>
 );
 
-export const Divider = () => <hr className="my-4 border-t border-gray-200" />;
+export const Divider = () => (
+	<hr className="mt-8 mb-6 border-t border-gray-200" />
+);
 
 export const Link = ({
 	href,
