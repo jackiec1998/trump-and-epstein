@@ -13,6 +13,8 @@ function App() {
 		"No new arrests, charges, or convictions have resulted from Trump's actions regarding the Epstein files.",
 	];
 
+	const ids = ["photos-together", "polls", "quotes", "new-arrests"];
+
 	return (
 		<div>
 			<div className="flex justify-center">
@@ -26,7 +28,11 @@ function App() {
 					<Body>Below are the list of key points:</Body>
 					<ul className="list-disc ml-6 text-xs text-gray-500 leading-relaxed">
 						{statements.map((statement, index) => (
-							<li key={index}>{statement}</li>
+							<li key={index}>
+								<a href={`#${ids[index]}`} className="hover:underline">
+									{statement}
+								</a>
+							</li>
 						))}
 					</ul>
 
