@@ -13,7 +13,7 @@ permissions:
 jobs:
   build-and-deploy:
     environment:
-      name: GitHub Pages
+      name: github-pages
       url: https://jackiec1998.github.io/trump-and-epstein/
 
     runs-on: ubuntu-latest
