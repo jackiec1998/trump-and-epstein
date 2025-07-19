@@ -4,7 +4,7 @@
 - [The Daily Beast --- Trump Ex-Chief of Staff Makes Bombshell Claim About Epstein Files](https://www.thedailybeast.com/trump-ex-chief-of-staff-makes-bombshell-claim-about-epstein-files/)
 - [Time --- A Timeline of Donald Trump and Jeffrey Epstein's Relationship as It Draws Renewed Attention](https://time.com/7302268/donald-trump-jeffrey-epstein-timeline-relationship-2/)
 - [Time --- Amid Campaign, Trump Kept Epstein Issue at Arm’s Length. His Allies Did Not](https://time.com/7302995/donald-trump-jeffrey-epstein-jd-vance/?utm_source=chatgpt.com)
-- [The New York Times --- In Epstein Case, Follow the Money, Democratic Senator Says](https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html?unlocked_article_code=1.XE8.Htgu.HiwOJbDA06Zd&smid=url-share)
+- [The New York Times --- In Epstein Case, Follow the Money, Democratic Senator Says](https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html?unlocked_article_code=1.XE8.Htgu.HiwOJbDA06Zd)
 
 ---
 
