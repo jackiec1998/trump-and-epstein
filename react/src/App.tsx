@@ -28,7 +28,7 @@ function App() {
 	return (
 		<div>
 			<div className="flex justify-center">
-				<div className="w-[430px] mt-6">
+				<div className="w-full max-w-md mt-6 px-4">
 					<Title>A Curated Fact Sheet on Trump & the Epstein Conspiracy</Title>
 
 					<Body>
