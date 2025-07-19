@@ -127,7 +127,7 @@ export const SocialMedia = ({ title, id }: { title: string; id: string }) => {
 				order. I'm sure there will be more.
 			</Body>
 			<Carousel
-				height={580}
+				height={560}
 				posts={supportPosts.map((post) => (
 					<Tweet url={post} />
 				))}
