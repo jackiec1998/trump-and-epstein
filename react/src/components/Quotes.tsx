@@ -86,8 +86,8 @@ const FoxNewsTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "/trump.jpg",
-		"Rachel Campos-Duffy": "/rachel.jpg",
+		"Donald Trump": "trump.jpg",
+		"Rachel Campos-Duffy": "rachel.jpg",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
@@ -180,8 +180,8 @@ const LexFridmanTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "/trump.jpg",
-		"Lex Fridman": "/lex.png",
+		"Donald Trump": "trump.jpg",
+		"Lex Fridman": "lex.png",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
@@ -248,7 +248,7 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 				"Seriously, we need to release the Epstein list. That is an important thing.",
 			href: "https://www.youtube.com/watch?v=vd8mmTDDqAs&t=2761s",
 			source: "YouTube",
-			image: "/vance.jpg",
+			image: "vance.jpg",
 		},
 		{
 			person: "Pam Bondi",
@@ -258,7 +258,7 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 				"It's [the Epstein list] sitting on my desk right now to review. That's been a directive by President Trump.",
 			href: "https://www.foxnews.com/politics/bondi-says-epstein-client-list-sitting-my-desk-right-now-reviewing-jfk-mlk-files",
 			source: "Fox News",
-			image: "/bondi.jpg",
+			image: "bondi.jpg",
 		},
 	];
 
