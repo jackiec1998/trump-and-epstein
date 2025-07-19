@@ -89,7 +89,7 @@ const Carousel = ({
 			style={{ height: `${height}px` }}
 			className="relative border border-gray-300 rounded-lg border-dashed mt-4 mb-12"
 		>
-			<CarouselButtons />
+			{window.innerWidth >= 600 ? <CarouselButtons /> : null}
 			<CarouselTracker />
 
 			<div
