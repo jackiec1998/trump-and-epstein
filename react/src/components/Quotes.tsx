@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { Body, DatedSubheader, Header } from "./general";
+import { Body, DatedSubheader, Header, SourceButton } from "./general";
 
 const Chat = ({
 	chat,
@@ -199,18 +199,33 @@ const Subheader = ({ children }: { children: React.ReactNode }) => (
 const Quote = ({
 	quote,
 }: {
-	quote: { person: string; date: string; context: string; quote: string };
+	quote: {
+		person: string;
+		date: string;
+		context: string;
+		quote: string;
+		href: string;
+		source: string;
+		image: string;
+	};
 }) => (
-	<div className="border border-gray-200 bg-gray-50 p-4 rounded-lg">
+	<div className="border border-gray-200 bg-gray-50 p-4 rounded-lg w-sm">
 		<div className="flex flex-col">
-			<time className="text-[8pt]">{quote.date}</time>
-			<span>{quote.context}</span>
+			<time className="text-[8pt] text-gray-500">{quote.date}</time>
+			<span className="font-semibold text-gray-800 text-[10pt]">
+				{quote.context}
+			</span>
 		</div>
 
-		<p className="w-full">{quote.quote}</p>
-		<div className="flex flex-row">
-			<div className="w-8 h-8 bg-green-200 rounded-full" />
-			<span>{quote.person}</span>
+		<p className="w-full my-2 mb-4 text-[10pt] leading-relaxed text-gray-800">
+			“{quote.quote}”
+		</p>
+		<div className="flex flex-row items-center justify-between">
+			<div className="flex flex-row items-center space-x-2">
+				<img src={quote.image} className="w-8 h-8 rounded-full" />
+				<span className="text-[10pt] font-semibold">{quote.person}</span>
+			</div>
+			<SourceButton href={quote.href}>View on {quote.source}</SourceButton>
 		</div>
 	</div>
 );
@@ -221,6 +236,9 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 		date: string;
 		context: string;
 		quote: string;
+		href: string;
+		source: string;
+		image: string;
 	}[] = [
 		{
 			person: "JD Vance",
@@ -228,13 +246,19 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 			context: "On Theo Von's Podcast",
 			quote:
 				"Seriously, we need to release the Epstein list. That is an important thing.",
+			href: "https://www.youtube.com/watch?v=vd8mmTDDqAs&t=2761s",
+			source: "YouTube",
+			image: "/vance.jpg",
 		},
 		{
 			person: "Pam Bondi",
 			date: "2025, February 21",
 			context: "On Fox News",
 			quote:
-				"It's [Epstein list] sitting on my desk riht now to review. That's been a directive by President Trump.",
+				"It's [the Epstein list] sitting on my desk right now to review. That's been a directive by President Trump.",
+			href: "https://www.foxnews.com/politics/bondi-says-epstein-client-list-sitting-my-desk-right-now-reviewing-jfk-mlk-files",
+			source: "Fox News",
+			image: "/bondi.jpg",
 		},
 	];
 
@@ -274,7 +298,10 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 				<LexFridmanTranscript />
 				<article className="mt-4 space-y-2">
 					<Subheader>Other Quotes</Subheader>
-					<Quote quote={otherQuotes[0]} />
+					<div className="flex flex-col items-center space-y-4 my-6">
+						<Quote quote={otherQuotes[0]} />
+						<Quote quote={otherQuotes[1]} />
+					</div>
 				</article>
 			</article>
 		</article>
