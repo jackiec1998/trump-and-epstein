@@ -15,8 +15,6 @@ function App() {
 		"No new arrests, charges, or convictions have resulted from Trump's actions regarding Epstein.",
 	];
 
-	console.log("foo bar bar");
-
 	const ids = [
 		"photos-together",
 		"polls",
