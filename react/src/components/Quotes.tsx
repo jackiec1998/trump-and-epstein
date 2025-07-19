@@ -86,8 +86,8 @@ const FoxNewsTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "/src/assets/trump.jpg",
-		"Rachel Campos-Duffy": "/src/assets/rachel.jpg",
+		"Donald Trump": "/public/trump.jpg",
+		"Rachel Campos-Duffy": "/public/rachel.jpg",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
@@ -180,8 +180,8 @@ const LexFridmanTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "/src/assets/trump.jpg",
-		"Lex Fridman": "/src/assets/lex.png",
+		"Donald Trump": "/public/trump.jpg",
+		"Lex Fridman": "/public/lex.png",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
