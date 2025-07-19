@@ -96,7 +96,7 @@ export const SourceButton = ({
 		href={href}
 		target="_blank"
 		rel="noopener noreferrer"
-		className={`inline-flex items-center border border-gray-200 text-xs px-2 py-1 rounded-md text-gray-500  w-auto hover:bg-gray-50 hover:border-gray-300 hover:text-gray-600 transition ${className}`}
+		className={`inline-flex items-center text-xs px-2 py-1 rounded-md bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 hover:text-gray-900 transition ${className}`}
 	>
 		{children}
 		<span className="ml-1.5">→</span>
