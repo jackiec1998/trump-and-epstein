@@ -12,7 +12,7 @@ const supportPosts: string[] = [
 ];
 
 const Tweet = ({ url }: { url: string }) => (
-	<div className="w-full scale-[0.7]">
+	<div className="scale-[0.7]">
 		<blockquote className="twitter-tweet" data-dnt="true">
 			<a href={url} />
 		</blockquote>
@@ -87,7 +87,7 @@ const Carousel = ({
 	return (
 		<div
 			style={{ height: `${height}px` }}
-			className="relative border border-gray-300 rounded-lg border-dashed mt-4 mb-12"
+			className="relative border border-gray-300 rounded-lg  mt-4 mb-12 bg-gray-50"
 		>
 			{window.innerWidth >= 600 ? <CarouselButtons /> : null}
 			<CarouselTracker />
@@ -97,10 +97,7 @@ const Carousel = ({
 				className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory h-full gap-10 hide-scrollbar"
 			>
 				{posts.map((post, i) => (
-					<div
-						key={i}
-						className="snap-start shrink-0 flex items-center justify-center w-full"
-					>
+					<div key={i} className="snap-start flex items-center justify-center">
 						{post}
 					</div>
 				))}
