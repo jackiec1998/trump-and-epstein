@@ -86,8 +86,8 @@ const FoxNewsTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "./trump.jpg",
-		"Rachel Campos-Duffy": "./rachel.jpg",
+		"Donald Trump": "/trump.jpg",
+		"Rachel Campos-Duffy": "/rachel.jpg",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
@@ -180,8 +180,8 @@ const LexFridmanTranscript = () => {
 	];
 
 	const avatars = {
-		"Donald Trump": "./trump.jpg",
-		"Lex Fridman": "./lex.png",
+		"Donald Trump": "/trump.jpg",
+		"Lex Fridman": "/lex.png",
 	};
 
 	const alignment: { [key: string]: "left" | "right" } = {
