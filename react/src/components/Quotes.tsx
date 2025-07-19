@@ -150,7 +150,7 @@ const LexFridmanTranscript = () => {
 		},
 		{
 			person: "Lex Fridman",
-			text: "So if you are able to [release the client list], you'll be...",
+			text: "So if you are able to [release the client list], you'll be-",
 		},
 		{
 			person: "Donald Trump",
@@ -192,7 +192,52 @@ const LexFridmanTranscript = () => {
 	return <Chat chat={chat} avatars={avatars} alignment={alignment} />;
 };
 
+const Subheader = ({ children }: { children: React.ReactNode }) => (
+	<h3 className="font-semibold text-[11pt] text-gray-600">{children}</h3>
+);
+
+const Quote = ({
+	quote,
+}: {
+	quote: { person: string; date: string; context: string; quote: string };
+}) => (
+	<div className="border border-gray-200 bg-gray-50 p-4 rounded-lg">
+		<div className="flex flex-col">
+			<time className="text-[8pt]">{quote.date}</time>
+			<span>{quote.context}</span>
+		</div>
+
+		<p className="w-full">{quote.quote}</p>
+		<div className="flex flex-row">
+			<div className="w-8 h-8 bg-green-200 rounded-full" />
+			<span>{quote.person}</span>
+		</div>
+	</div>
+);
+
 export const Quotes = ({ title, id }: { title: string; id: string }) => {
+	const otherQuotes: {
+		person: string;
+		date: string;
+		context: string;
+		quote: string;
+	}[] = [
+		{
+			person: "JD Vance",
+			date: "2024, October 22",
+			context: "On Theo Von's Podcast",
+			quote:
+				"Seriously, we need to release the Epstein list. That is an important thing.",
+		},
+		{
+			person: "Pam Bondi",
+			date: "2025, February 21",
+			context: "On Fox News",
+			quote:
+				"It's [Epstein list] sitting on my desk riht now to review. That's been a directive by President Trump.",
+		},
+	];
+
 	return (
 		<article className="space-y-2">
 			<Header id={id}>{title}</Header>
@@ -227,6 +272,10 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 				</div>
 				<Body>Again, here's the back-and-forth:</Body>
 				<LexFridmanTranscript />
+				<article className="mt-4 space-y-2">
+					<Subheader>Other Quotes</Subheader>
+					<Quote quote={otherQuotes[0]} />
+				</article>
 			</article>
 		</article>
 	);

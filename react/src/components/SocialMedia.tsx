@@ -1,16 +1,32 @@
 import { Body, Header } from "./general";
 import { useEffect, useRef, useState } from "react";
 
+const supportPosts: string[] = [
+	"https://twitter.com/DonaldJTrumpJr/status/1677715945458921473",
+	"https://twitter.com/charliekirk11/status/1843421097628512758",
+	"https://twitter.com/libsoftiktok/status/1853885016507547665",
+	"https://twitter.com/Riley_Gaines_/status/1884808440188436899",
+	"https://twitter.com/DineshDSouza/status/1887164256623194400",
+	"https://twitter.com/catturd2/status/1892736893294404067",
+	"https://twitter.com/Timcast/status/1893018871201775712",
+];
+
 const Tweet = ({ url }: { url: string }) => (
-	<div className="scale-[0.7]">
+	<div className="w-full scale-[0.7]">
 		<blockquote className="twitter-tweet" data-dnt="true">
 			<a href={url} />
 		</blockquote>
 	</div>
 );
 
-const Carousel = () => {
-	const [index, setIndex] = useState(0); // Start at 0
+const Carousel = ({
+	height,
+	posts,
+}: {
+	height: number;
+	posts: React.ReactNode[];
+}) => {
+	const [index, setIndex] = useState(0);
 	const scrollRef = useRef<HTMLDivElement>(null);
 
 	const handleScroll = () => {
@@ -19,7 +35,7 @@ const Carousel = () => {
 
 		const scrollLeft = container.scrollLeft;
 		const itemWidth = container.firstElementChild?.clientWidth || 1;
-		const totalItemWidth = itemWidth;
+		const totalItemWidth = itemWidth + 40;
 
 		const computedIndex = Math.round(scrollLeft / totalItemWidth);
 		setIndex(computedIndex);
@@ -30,7 +46,7 @@ const Carousel = () => {
 		if (!container) return;
 
 		const itemWidth = container.firstElementChild?.clientWidth || 1;
-		const scrollAmount = itemWidth;
+		const scrollAmount = itemWidth + 40;
 
 		container.scrollBy({
 			left: direction === "left" ? -scrollAmount : scrollAmount,
@@ -68,18 +84,11 @@ const Carousel = () => {
 		</span>
 	);
 
-	const posts: React.ReactNode[] = [
-		<Tweet url="https://twitter.com/DonaldJTrumpJr/status/1677715945458921473" />,
-		<Tweet url="https://twitter.com/charliekirk11/status/1843421097628512758" />,
-		<Tweet url="https://twitter.com/libsoftiktok/status/1853885016507547665" />,
-		<Tweet url="https://twitter.com/Riley_Gaines_/status/1884808440188436899" />,
-		<Tweet url="https://twitter.com/DineshDSouza/status/1887164256623194400" />,
-		<Tweet url="https://twitter.com/catturd2/status/1892736893294404067" />,
-		<Tweet url="https://twitter.com/Timcast/status/1893018871201775712" />,
-	];
-
 	return (
-		<div className="relative h-[580px] border border-gray-300 rounded-lg border-dashed mt-4 mb-12">
+		<div
+			style={{ height: `${height}px` }}
+			className="relative border border-gray-300 rounded-lg border-dashed mt-4 mb-12"
+		>
 			<CarouselButtons />
 			<CarouselTracker />
 
@@ -101,6 +110,15 @@ const Carousel = () => {
 };
 
 export const SocialMedia = ({ title, id }: { title: string; id: string }) => {
+	const [rightNow, setRightNow] = useState(new Date());
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setRightNow(new Date());
+		}, 1000);
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<article className="space-y-2">
 			<Header id={id}>{title}</Header>
@@ -108,7 +126,27 @@ export const SocialMedia = ({ title, id }: { title: string; id: string }) => {
 				Here are a few examples throughout the times—placed in chronological
 				order. I'm sure there will be more.
 			</Body>
-			<Carousel />
+			<Carousel
+				height={580}
+				posts={supportPosts.map((post) => (
+					<Tweet url={post} />
+				))}
+			/>
+			<Body>
+				And now that nothing has happened, as of{" "}
+				{rightNow
+					.toLocaleString("en-US", {
+						year: "numeric",
+						month: "long",
+						day: "numeric",
+						hour: "2-digit",
+						minute: "2-digit",
+						second: "2-digit",
+						hour12: true,
+					})
+					.replace(/, (\d{4})/, ", 2025")}
+				, MAGA ain't happy.
+			</Body>
 		</article>
 	);
 };
