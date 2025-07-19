@@ -91,6 +91,10 @@ YouTube timestamp linked pulled from [HuffPost](https://www.huffpost.com/entry/d
 >
 > Vance: Seriously, we need to release the Epstein list. That is an important thing. We can go down that rabbit hole, but anyway.
 
+### 2025, February 21 --- Pam Bondi on [Fox News](https://www.foxnews.com/politics/bondi-says-epstein-client-list-sitting-my-desk-right-now-reviewing-jfk-mlk-files)
+
+> It's [Epstein's client list] sitting on my desk right now to review. That's been a directive by President Trump.
+
 ## MAGA influncers and supporters have been vocal about Epstein, calling Trump to release the files.
 
 Aggregated sources: [Reddit, r/agedlikemilk](https://www.reddit.com/r/agedlikemilk/comments/1lztnih/a_list_of_maga_before_and_after_the_epstein_list/)
