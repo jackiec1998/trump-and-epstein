@@ -26,6 +26,8 @@ const Carousel = ({
 	height: number;
 	posts: React.ReactNode[];
 }) => {
+	const MIN_WIDTH_FOR_BUTTONS = 560;
+
 	const [index, setIndex] = useState(0);
 	const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -89,7 +91,7 @@ const Carousel = ({
 			style={{ height: `${height}px` }}
 			className="relative border border-gray-300 rounded-lg  mt-4 mb-12 bg-gray-50"
 		>
-			{window.innerWidth >= 600 ? <CarouselButtons /> : null}
+			{window.innerWidth >= MIN_WIDTH_FOR_BUTTONS ? <CarouselButtons /> : null}
 			<CarouselTracker />
 
 			<div
