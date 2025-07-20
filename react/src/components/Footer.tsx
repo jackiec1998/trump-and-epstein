@@ -17,7 +17,7 @@ export const Footer = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch("last-updated.json");
+			const response = await fetch(`last-updated.json?cb=${Date.now()}`);
 			const data = await response.json();
 			setLastUpdated(new Date(data.lastUpdated));
 		};
