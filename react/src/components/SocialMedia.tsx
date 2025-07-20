@@ -1,4 +1,4 @@
-import { Body, Header } from "./general";
+import { Body, formatTime, Header } from "./general";
 import { useEffect, useRef, useState } from "react";
 
 const supportPosts: string[] = [
@@ -135,19 +135,8 @@ export const SocialMedia = ({ title, id }: { title: string; id: string }) => {
 				))}
 			/>
 			<Body>
-				And now that nothing has happened, as of{" "}
-				{rightNow
-					.toLocaleString("en-US", {
-						year: "numeric",
-						month: "long",
-						day: "numeric",
-						hour: "2-digit",
-						minute: "2-digit",
-						second: "2-digit",
-						hour12: true,
-					})
-					.replace(/, (\d{4})/, ", 2025")}
-				, MAGA ain't happy.
+				And now that nothing has happened, as of {formatTime(rightNow)}, MAGA
+				ain't happy.
 			</Body>
 		</article>
 	);
