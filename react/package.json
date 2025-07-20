@@ -6,7 +6,7 @@
 	"homepage": "https://jackiec1998.github.io/trump-and-epstein/",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc -b && vite build && node ./last-updated.js",
+		"build": "node ./last-updated.js && tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"deploy": "gh-pages -d dist"
