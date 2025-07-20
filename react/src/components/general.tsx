@@ -21,19 +21,15 @@ export const Header = ({
 	children: React.ReactNode;
 	id: string;
 }) => (
-	<a href={`#${id}`} className="no-underline">
-		<h2
-			id={id}
-			className="group relative text-lg font-semibold text-gray-800 text-pretty scroll-mt-6"
-		>
-			<a
-				href={`#${id}`}
-				className="absolute -left-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-gray-400 hover:text-gray-600"
-			>
-				#
-			</a>
-			{children}
-		</h2>
+	<a
+		id={id}
+		href={`#${id}`}
+		className="group relative block text-lg font-semibold text-gray-800 text-pretty scroll-mt-6 no-underline"
+	>
+		<span className="absolute -left-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-gray-400 hover:text-gray-600">
+			#
+		</span>
+		{children}
 	</a>
 );
 

@@ -1,4 +1,4 @@
-import type { JSX } from "react";
+import { type JSX } from "react";
 import { Body, DatedSubheader, Header, SourceButton } from "./general";
 
 const Chat = ({
@@ -29,8 +29,8 @@ const Chat = ({
 							person === "Donald Trump" ? "rounded-bl-none" : "rounded-br-none"
 						}`}
 					>
-						<p>{text}</p>
-						<p className="text-gray-400 mt-2">{person}</p>
+						<div>{text}</div>
+						<div className="text-gray-400 mt-2">{person}</div>
 					</div>
 					{alignment[person] === "right" && <Avatar src={avatars[person]} />}
 				</div>
@@ -217,9 +217,9 @@ const Quote = ({
 			</span>
 		</div>
 
-		<p className="w-full my-2 mb-4 text-[10pt] leading-relaxed text-gray-800">
+		<div className="w-full my-2 mb-4 text-[10pt] leading-relaxed text-gray-800">
 			“{quote.quote}”
-		</p>
+		</div>
 		<div className="flex flex-row items-center justify-between">
 			<div className="flex flex-row items-center space-x-2">
 				<img src={quote.image} className="w-8 h-8 rounded-full" />
@@ -229,6 +229,19 @@ const Quote = ({
 		</div>
 	</div>
 );
+
+const Video = ({ src }: { src: string }) => {
+	return (
+		<div className="w-full h-full rounded-lg overflow-hidden">
+			<iframe
+				className="w-full h-full rounded-xl"
+				src={src}
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerPolicy="strict-origin-when-cross-origin"
+			></iframe>
+		</div>
+	);
+};
 
 export const Quotes = ({ title, id }: { title: string; id: string }) => {
 	const otherQuotes: {
@@ -270,12 +283,7 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 					On the Will Cain Show (Fox News)
 				</DatedSubheader>
 				<div className="w-full aspect-video my-5">
-					<iframe
-						className="w-full h-full rounded-xl"
-						src="https://www.youtube.com/embed/HVKRNcQUbRY?si=KTtL0554FuJRyKNT&start=2119"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerPolicy="strict-origin-when-cross-origin"
-					></iframe>
+					<Video src="https://www.youtube.com/embed/HVKRNcQUbRY?si=KTtL0554FuJRyKNT&start=2119" />
 				</div>
 				<Body>
 					For your convenience, here is a transcript of the relevant exchange:
@@ -287,12 +295,7 @@ export const Quotes = ({ title, id }: { title: string; id: string }) => {
 					On the Lex Fridman Podcast
 				</DatedSubheader>
 				<div className="w-full aspect-video my-5">
-					<iframe
-						className="w-full h-full rounded-xl"
-						src="https://www.youtube.com/embed/qCbfTN-caFI?si=5oPTJ37jzaId76ir&start=2657"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerPolicy="strict-origin-when-cross-origin"
-					></iframe>
+					<Video src="https://www.youtube.com/embed/qCbfTN-caFI?start=2763" />
 				</div>
 				<Body>Again, here's the back-and-forth:</Body>
 				<LexFridmanTranscript />
