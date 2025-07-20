@@ -31,6 +31,10 @@ jobs:
         working-directory: ./react
         run: npm install
 
+      - name: Create last-updated.json
+        working-directory: ./react
+        run: node ./last-updated.js
+
       - name: Build the React app
         working-directory: ./react
         run: npm run build
