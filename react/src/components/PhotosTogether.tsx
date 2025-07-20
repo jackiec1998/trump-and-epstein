@@ -126,7 +126,7 @@ const Timeline = () => {
 	return (
 		<ol className="relative ml-2 border-s border-gray-200 space-y-4 mt-4 pb-2">
 			{appearances.map((appearance, index) => (
-				<li key={index} className="ml-4 w-[320px] space-y-1">
+				<li key={index} className="ml-4 max-w-[320px] space-y-1">
 					<Bullet />
 					<time className="text-[7pt] text-gray-400">
 						{formatDate(appearance.year, appearance.month, appearance.day)}

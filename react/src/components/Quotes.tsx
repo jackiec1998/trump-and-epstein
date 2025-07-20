@@ -209,7 +209,7 @@ const Quote = ({
 		image: string;
 	};
 }) => (
-	<div className="border border-gray-200 bg-gray-50 p-4 rounded-lg w-sm">
+	<div className="border border-gray-200 bg-gray-50 p-4 rounded-lg max-w-sm">
 		<div className="flex flex-col">
 			<time className="text-[8pt] text-gray-500">{quote.date}</time>
 			<span className="font-semibold text-gray-800 text-[10pt]">
