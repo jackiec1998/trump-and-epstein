@@ -211,7 +211,13 @@ Video footage hosted on [C-SPAN](https://www.c-span.org/program/public-affairs-e
 
 - 2025, July 14 --- [Axios](https://www.axios.com/2025/07/15/trump-epstein-khanna-doj-democrats-republicans)/[Archive](https://archive.ph/U7u4P): _House GOP blocks Dem maneuver to force release of Epstein files_
 
+- 2025, July 15 --- [Wired](https://www.wired.com/story/the-fbis-jeffrey-epstein-prison-video-had-nearly-3-minutes-cut-out/)/[Archive](https://archive.ph/1J4pg): _The FBI's Jeffrey Epstein Prison Video Had Nearly 3 Minutes Cut Out_
+
+- 2025, July 16 --- [The New York Times](https://www.nytimes.com/article/jeffrey-epstein-files-trump.html)/[Archive](https://archive.ph/3Tbjn): _What to Know About the Epstein Files, a Perfect Recipe for Conspiracy Theories_
+
 - 2025, July 17 --- According to [WSJ](https://www.wsj.com/politics/trump-jeffrey-epstein-birthday-letter-we-have-certain-things-in-common-f918d796), Trump's birthday card to Epstein says: "Happy Birthday — and may every day be another wonderful secret."
+
+- 2025, July 19 --- On [Interesting Times with Ross Douthat](https://open.spotify.com/episode/2AM0QQ0C93XNR2rJHfRn3C?si=6fbc1318894d456a), Miami Herald investigative reporter who sparked renew interested in the Epstein case in 2018, said: "That's correct. Let me be clear. Epstein did not do this all by himself. Be barely tied his shoes by himself. He had butlers and assistants doing everything for him, including his compiling of his client list, his musical playlists he had people doing that for him, his computers. He had lots of people helping him. So he did not do this alone. There were others helping him. And there were other men who he sent some of these women [girls] to." (57:50).
 
 ---
 
